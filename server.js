@@ -31,10 +31,8 @@ app.use(morgan(devMode ? 'dev' : 'combined'))
 app.use(cors({ origin: true }))
 
 // authentication
-var username = 'kubrickan';
-var password = 'H3lton1717.';
-var auth = 'Basic ' + new Buffer(username + ':' + password).toString('base64');
-var header = { 'Host': 'www.example.com', 'Authorization': auth };
+// var auth = 'Basic ' + new Buffer(username + ':' + password).toString('base64');
+// var header = { 'Host': 'www.example.com', 'Authorization': auth };
 const MSFHeaders = { Authorization: 'Basic a3Vicmlja2FuOkgzbHRvbjE3MTcu' };
 var rosters;
 
@@ -1006,9 +1004,6 @@ app.get('/getmatchups', function(req, res) {
   const results = urlList
     .map(getJSON)
 
-
-  
-    
   Promise.all(results)
     .then(data => {
       console.log(data)
