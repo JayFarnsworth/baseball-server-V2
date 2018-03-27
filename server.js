@@ -904,12 +904,13 @@ app.get('/pitchergamelogs', function (req, res) {
           }
         }
         cumLogsObj.SLG = Number((((cumLogsObj.HR * 4) + (cumLogsObj['3B'] * 3) + (cumLogsObj['2B'] * 2) + (cumLogsObj.H - (cumLogsObj.HR - cumLogsObj['3B'] - cumLogsObj['2B']))) / cumLogsObj.PAB)).toFixed(3);
-        cumLogsObj.OBP = Number(((cumLogsObj.H + cumLogsObj.BB + cumLogsObj.HBP) / (cumLogsObj.PAB + cumLogsObj.BB + cumLogsObj.HBP + cumLogsObj.SF))).toFixed(3)
+        cumLogsObj.OBP = Number(((cumLogsObj.H + cumLogsObj.BB) / (cumLogsObj.PAB))).toFixed(3)
         cumLogsObj.ERA = Number(((cumLogsObj.ER / cumLogsObj.IP) * 9).toFixed(3))
-        cumLogsObj.OPS = Number((cumLogsObj.OPS / gameLogs.length).toFixed(3))
+        cumLogsObj.OPS = Number((Number(cumLogsObj.OBP) + Number(cumLogsObj.SLG)).toFixed(3))
+        cumLogsObj.OBP = Number(cumLogsObj.OBP)
         cumLogsObj.WHIP = Number((cumLogsObj.WHIP / gameLogs.length).toFixed(3))
         cumLogsObj.GOFO = Number((cumLogsObj.GOFO / gameLogs.length).toFixed(3))
-        cumLogsObj.AVG = Number((cumLogsObj.AVG / gameLogs.length).toFixed(3))
+        cumLogsObj.AVG = Number((cumLogsObj.H / cumLogsObj.PAB).toFixed(3))
         cumLogsObj.KBB = Number((cumLogsObj.KBB / gameLogs.length).toFixed(3))
         // if (!cumLogsObj.IP.isInteger) {
         //   decimal 
