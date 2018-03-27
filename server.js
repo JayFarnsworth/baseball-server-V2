@@ -31,8 +31,6 @@ app.use(morgan(devMode ? 'dev' : 'combined'))
 app.use(cors({ origin: true }))
 
 // authentication
-// var auth = 'Basic ' + new Buffer(username + ':' + password).toString('base64');
-// var header = { 'Host': 'www.example.com', 'Authorization': auth };
 const MSFHeaders = { Authorization: 'Basic a3Vicmlja2FuOkgzbHRvbjE3MTcu' };
 var rosters;
 
