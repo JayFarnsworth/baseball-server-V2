@@ -209,7 +209,7 @@ app.get('/gamesfetch', function (req, res) {
   } else {
     var date = getDate();
   }
-  let url = 'https://api.mysportsfeeds.com/v1.2/pull/mlb/2018-regular/daily_game_schedule.json?fordate=' + date;
+  let url = 'https://api.mysportsfeeds.com/v1.2/pull/mlb/2017-regular/daily_game_schedule.json?fordate=' + date;
   fetch(url, {
     credentials: 'same-origin',
     headers: MSFHeaders,
