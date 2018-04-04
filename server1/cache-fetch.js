@@ -2,7 +2,7 @@ const cache = require('./cache.js');
 const fetch = require('node-fetch');
 
 
-function getJSON(url, options={}, index = 2000) {
+function getJSON(url, options={}, msec = 2000) {
   console.log('cache fetch', url)
   return Promise.resolve()
     .then(()=>{
@@ -11,7 +11,7 @@ function getJSON(url, options={}, index = 2000) {
         if (data){
           return data
         } 
-        return delay(index * currentDelay)
+        return delay(msec)
         .then(()=>{
           return fetch(url, options)
             .then(request => request.json())
@@ -23,4 +23,11 @@ function getJSON(url, options={}, index = 2000) {
       })
     })
 }
+
+function delay(msec) {
+  return new Promise(resolve => {
+    setTimeout(resolve, msec);
+  })
+}
+
 module.exports = getJSON;

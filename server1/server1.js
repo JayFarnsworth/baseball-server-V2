@@ -18,6 +18,7 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const playerObject = require('./localServerFiles/playerObject.json');
 const cache = require('./cache.js');
+const cacheFetch = require('./cache-fetch.js');
 
 var rp = require('request-promise');
 const teams = ['ARI', 'ATL', 'BAL', 'BOS', 'CHC', 'CIN', 'CLE', 'COL', 'CWS', 'DET', 'HOU', 'KC', 'LAA', 'LAD', 'MIA', 'MIL', 'MIN', 'NYM', 'NYY', 'OAK', 'PHI', 'PIT', 'SD', 'SEA', 'SF', 'STL', 'TB', 'TEX', 'TOR', 'WAS'];
@@ -88,109 +89,114 @@ app.get('/addstats', function(req, res){
 })
 
 app.get('/rosterplayers', function (req, res) {
-  var todaysDate = getDate()
-  var url = 'https://api.mysportsfeeds.com/v1.2/pull/mlb/2018-regular/roster_players.json?fordate=' + todaysDate;
-  fetch(url, {
+    getPlayers(getDate())
+    .then(body => {
+      return getTeams(body.rosterplayers.playerentry)
+      .then(sortBattersPitchers)
+      .then(sorted=>{
+        return cache.set('teamObject', sorted)
+          .then(() => {
+            res.send(sorted)
+          })
+      })
+    })
+})
+
+function getPlayers (forDate) {
+  var url = 'https://api.mysportsfeeds.com/v1.2/pull/mlb/2018-regular/roster_players.json?fordate=' + forDate;
+  return cacheFetch(url, {
     credentials: 'same-origin',
     headers: MSFHeaders,
     method: 'GET',
     mode: 'cors'
-  }).then(resp => resp.json())
-    .then(body => {
-      var players = body.rosterplayers.playerentry;
-      var url1 = 'https://api.mysportsfeeds.com/v1.2/pull/mlb/2018-regular/active_players.json';
-      fetch(url1, {
-        credentials: 'same-origin',
-        headers: MSFHeaders,
-        method: 'GET',
-        mode: 'cors'
-      }).then(resp => resp.json())
-        .then(resp => {
-          var teamRosters = {};
-          var unassignedPlayers = [];
-          var allPlayers = resp.activeplayers.playerentry;
-          for (let team of teams) {
-            teamRosters[team] = {}
+  })
+}
+
+function getTeams(players) {
+  // var players = body.rosterplayers.playerentry;
+  var url1 = 'https://api.mysportsfeeds.com/v1.2/pull/mlb/2018-regular/active_players.json';
+  return cacheFetch(url1, {
+    credentials: 'same-origin',
+    headers: MSFHeaders,
+    method: 'GET',
+    mode: 'cors'
+  })
+    .then(resp => {
+      var teamRosters = {};
+      var unassignedPlayers = [];
+      var allPlayers = resp.activeplayers.playerentry;
+      for (let team of teams) {
+        teamRosters[team] = {}
+      };
+      for (let player of players) {
+        if (player.team) {
+          var colors = teamColors.mlbColors.filter(color => {
+            if (player.team.Name === color.name) return color;
+          });
+          var border = {
+            border: '6px solid ' + colors[0].colors.secondary,
+            backgroundColor: colors[0].colors.primary,
           };
-          for (let player of players) {
-            if (player.team) {
-              var colors = teamColors.mlbColors.filter(color => {
-                if (player.team.Name === color.name) return color;
-              });
-              var border = {
-                border: '6px solid ' + colors[0].colors.secondary,
-                backgroundColor: colors[0].colors.primary,
-              };
-              var logo = colors[0].logo;       
-            } else {
-              var colors = [{colors:{}}];
-              border = {};
-            }
-            let a = allPlayers.filter(p=>{
-              if (p.player.ID == player.player.ID) return p; 
-            })
-            var IDs = id_list.filter(id=>{
-              let name = player.player.FirstName + ' ' + player.player.LastName;
-              let normalized = name.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-              if (normalized === id.espn_name) return id;
-            })
-            if (IDs[0] !== undefined) {
-              var IDSet = {
-                bref_id: IDs[0].bref_id,
-                mlb_id: IDs[0].mlb_id,
-                fg_id: IDs[0].fg_id,
-                espn_id: IDs[0].espn_id,
-                rotowire_id: IDs[0].rotowire_id,
-                msf_id: player.player.ID
-              }
-            } else var IDSet = {};
-            if (a[0] !== undefined) {
-              player.info = {
-                ID: a[0].player.ID,
-                LastName: a[0].player.LastName,
-                FirstName: a[0].player.FirstName,
-                JerseyNumber: a[0].player.JerseyNumber,
-                Position: a[0].player.Position,
-                Team: {
-                  Info: player.team,
-                  Colors: colors[0].colors,
-                  Border: border,
-                  logo: logo
-                },
-                Image: a[0].player.officialImageSrc,
-                Handedness: a[0].player.handedness,
-                Info: {
-                  Age: a[0].player.Age,
-                  Height: a[0].player.Height,
-                  Weight: a[0].player.Weight,
-                  Birthday: a[0].player.BirthDate,
-                  BirthCity: a[0].player.BirthCity,
-                  BirthCountry: a[0].player.BirthCountry,
-                  IsRookie: a[0].player.IsRookie
-                },
-                IDs: IDSet
-              }
-              if (player.team) {
-                teamRosters[player.team.Abbreviation][player.info.ID] = player.info;
-                // if (!('backups' in teamRosters[player.team.Abbreviation])) {
-                //   teamRosters[player.team.Abbreviation]['backups'] = {};
-                // }
-                // teamRosters[player.team.Abbreviation]['backups'][player.info.LastName] = player.info;
-              } else {
-                unassignedPlayers.push(player.player)
-              }
-            }
-          }
-          var sorted = sortBattersPitchers(teamRosters)
-          fs.writeFile('./localServerFiles/playerObject.json', JSON.stringify(sorted), function (err) {
-
-            console.log('File written as playerObject.json');
-
-          })
-          res.send(sorted)
+          var logo = colors[0].logo;
+        } else {
+          var colors = [{ colors: {} }];
+          border = {};
+        }
+        let a = allPlayers.filter(p => {
+          if (p.player.ID == player.player.ID) return p;
         })
-    })
-})
+        var IDs = id_list.filter(id => {
+          let name = player.player.FirstName + ' ' + player.player.LastName;
+          let normalized = name.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+          if (normalized === id.espn_name) return id;
+        })
+        if (IDs[0] !== undefined) {
+          var IDSet = {
+            bref_id: IDs[0].bref_id,
+            mlb_id: IDs[0].mlb_id,
+            fg_id: IDs[0].fg_id,
+            espn_id: IDs[0].espn_id,
+            rotowire_id: IDs[0].rotowire_id,
+            msf_id: player.player.ID
+          }
+        } else var IDSet = {};
+        if (a[0] !== undefined) {
+          player.info = {
+            ID: a[0].player.ID,
+            LastName: a[0].player.LastName,
+            FirstName: a[0].player.FirstName,
+            JerseyNumber: a[0].player.JerseyNumber,
+            Position: a[0].player.Position,
+            Team: {
+              Info: player.team,
+              Colors: colors[0].colors,
+              Border: border,
+              logo: logo
+            },
+            Image: a[0].player.officialImageSrc,
+            Handedness: a[0].player.handedness,
+            Info: {
+              Age: a[0].player.Age,
+              Height: a[0].player.Height,
+              Weight: a[0].player.Weight,
+              Birthday: a[0].player.BirthDate,
+              BirthCity: a[0].player.BirthCity,
+              BirthCountry: a[0].player.BirthCountry,
+              IsRookie: a[0].player.IsRookie
+            },
+            IDs: IDSet
+          }
+          if (player.team) {
+            teamRosters[player.team.Abbreviation][player.info.ID] = player.info;
+          } else {
+            unassignedPlayers.push(player.player)
+          }
+        }
+      }
+    return teamRosters
+  })
+}
+
 function sortBattersPitchers(obj) {
   let rosterObj = obj
   var teams = Object.keys(rosterObj);
@@ -318,6 +324,7 @@ app.get('/getallteamsbatters', function (req, res){
     })
 })
 
+
 app.get('/addbatterstats1', function (req, res) {
   const gameObj = require('./localServerFiles/playerObj1.json');
   var team = req.query.team
@@ -331,54 +338,7 @@ app.get('/addbatterstats1', function (req, res) {
   }
   var years = ['2017', '2018'];
   for (let year of years) {
-    let url = `https://api.mysportsfeeds.com/v1.2/pull/mlb/${year}-regular/cumulative_player_stats.json?player=${commaSeparated}&playerstats=AB,R,H,2B,3B,HR,RBI,BB,SO,AVG,SLG,OPS,PA,LOB,GroB,FlyB,LD,NP,StrM,Swi`;
-    fetch(url, {
-      credentials: 'same-origin',
-      headers: MSFHeaders,
-      method: 'GET',
-      mode: 'cors'
-    })
-      .then(resp => resp.json()).catch(err=>console.log(err)).then(resp => {
-        for (let player of resp.cumulativeplayerstats.playerstatsentry) {
-          if (player === undefined) {
-            console.log('undefined', player)
-          }
-          var s = player.stats;
-          let id = player.player.ID;
-          objs[id].stats[year] = {
-            G: s.GamesPlayed['#text'],
-            AB: s.AtBats['#text'],
-            R: s.Runs['#text'],
-            H: s.Hits['#text'],
-            '2B': s.SecondBaseHits['#text'],
-            '3B': s.ThirdBaseHits['#text'],
-            HR: s.Homeruns['#text'],
-            RBI: s.RunsBattedIn['#text'],
-            BB: s.BatterWalks['#text'],
-            SWI: s.BatterSwings['#text'],
-            STRM: s.BatterStrikesMiss['#text'],
-            GROB: s.BatterGroundBalls['#text'],
-            FLYB: s.BatterFlyBalls['#text'],
-            LD: s.BatterLineDrives['#text'],
-            SO: s.BatterStrikeouts['#text'],
-            BA: s.BattingAvg['#text'],
-            SLG: s.BatterSluggingPct['#text'],
-            OPS: s.BatterOnBasePlusSluggingPct['#text'],
-            NP: s.PitchesFaced['#text'],
-            PA: s.PlateAppearances['#text'],
-            LOB: s.LeftOnBase['#text']
-          }
-        }
-        if (year === '2018') {
-          var added = addBatterCum1(objs, gameObj, team)
-          res.send(added);
-          
-          fs.writeFile('./localServerFiles/playerObject.json', JSON.stringify(added), function (err) {
-            console.log('File written as playerObject.json');
-          })
-        }
 
-      })
   }
 })
 function addBatterCum1(statsObj, playerObj, team) {
@@ -387,6 +347,58 @@ function addBatterCum1(statsObj, playerObj, team) {
     playerObj[team].batters[id].stats = statsObj[id].stats;
   }
   return playerObj;
+}
+
+function getPlayerStats (year, commaList) {
+  let url = `https://api.mysportsfeeds.com/v1.2/pull/mlb/${year}-regular/cumulative_player_stats.json?player=${commaSeparated}&playerstats=AB,R,H,2B,3B,HR,RBI,BB,SO,AVG,SLG,OPS,PA,LOB,GroB,FlyB,LD,NP,StrM,Swi`;
+  return cacheFetch(url, {
+    credentials: 'same-origin',
+    headers: MSFHeaders,
+    method: 'GET',
+    mode: 'cors'
+  })
+    .then(resp => resp.json())
+    .then(resp => {
+      for (let player of resp.cumulativeplayerstats.playerstatsentry) {
+        if (player === undefined) {
+          console.log('undefined', player)
+        }
+        var s = player.stats;
+        let id = player.player.ID;
+        objs[id].stats[year] = {
+          G: s.GamesPlayed['#text'],
+          AB: s.AtBats['#text'],
+          R: s.Runs['#text'],
+          H: s.Hits['#text'],
+          '2B': s.SecondBaseHits['#text'],
+          '3B': s.ThirdBaseHits['#text'],
+          HR: s.Homeruns['#text'],
+          RBI: s.RunsBattedIn['#text'],
+          BB: s.BatterWalks['#text'],
+          SWI: s.BatterSwings['#text'],
+          STRM: s.BatterStrikesMiss['#text'],
+          GROB: s.BatterGroundBalls['#text'],
+          FLYB: s.BatterFlyBalls['#text'],
+          LD: s.BatterLineDrives['#text'],
+          SO: s.BatterStrikeouts['#text'],
+          BA: s.BattingAvg['#text'],
+          SLG: s.BatterSluggingPct['#text'],
+          OPS: s.BatterOnBasePlusSluggingPct['#text'],
+          NP: s.PitchesFaced['#text'],
+          PA: s.PlateAppearances['#text'],
+          LOB: s.LeftOnBase['#text']
+        }
+      }
+      // if (year === '2018') {
+      //   var added = addBatterCum1(objs, gameObj, team)
+      //   res.send(added);
+
+      //   fs.writeFile('./localServerFiles/playerObject.json', JSON.stringify(added), function (err) {
+      //     console.log('File written as playerObject.json');
+      //   })
+      // }
+
+    })
 }
 
 

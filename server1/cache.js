@@ -8,7 +8,7 @@ function get (key) {
   console.log(fileName)
   return fs.readFileAsync(fileName, 'utf8')
   .catch(error=>{
-    console.log(error)
+    console.log('cache miss ' + key + ' not found')
     return null
   })
   .then(rawData=>{
