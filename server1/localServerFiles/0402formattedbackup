@@ -1,0 +1,6377 @@
+[
+{
+"gamestartinglineup": {
+"lastUpdatedOn": "2018-04-02 1:17:49 PM",
+"game": {
+"id": "43478",
+"date": "2018-04-02",
+"time": "1:05PM",
+"awayTeam": {
+"ID": "120",
+"City": "Minnesota",
+"Name": "Twins",
+"Abbreviation": "MIN"
+},
+"homeTeam": {
+"ID": "132",
+"City": "Pittsburgh",
+"Name": "Pirates",
+"Abbreviation": "PIT"
+},
+"location": "PNC Park"
+},
+"teamLineup": [
+{
+"team": {
+"ID": "120",
+"City": "Minnesota",
+"Name": "Twins",
+"Abbreviation": "MIN"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10670",
+"LastName": "Buxton",
+"FirstName": "Byron",
+"JerseyNumber": "25",
+"Position": "CF"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "11388",
+"LastName": "Castro",
+"FirstName": "Jason",
+"JerseyNumber": "15",
+"Position": "C"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11136",
+"LastName": "Escobar",
+"FirstName": "Eduardo",
+"JerseyNumber": "5",
+"Position": "SS"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10671",
+"LastName": "Kepler",
+"FirstName": "Max",
+"JerseyNumber": "26",
+"Position": "RF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10671",
+"LastName": "Kepler",
+"FirstName": "Max",
+"JerseyNumber": "26",
+"Position": "RF"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10675",
+"LastName": "Sano",
+"FirstName": "Miguel",
+"JerseyNumber": "22",
+"Position": "DH"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10918",
+"LastName": "Lynn",
+"FirstName": "Lance",
+"JerseyNumber": "31",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "11388",
+"LastName": "Castro",
+"FirstName": "Jason",
+"JerseyNumber": "15",
+"Position": "C"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10675",
+"LastName": "Sano",
+"FirstName": "Miguel",
+"JerseyNumber": "22",
+"Position": "DH"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10672",
+"LastName": "Rosario",
+"FirstName": "Eddie",
+"JerseyNumber": "20",
+"Position": "LF"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "11135",
+"LastName": "Dozier",
+"FirstName": "Brian",
+"JerseyNumber": "2",
+"Position": "2B"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10668",
+"LastName": "Mauer",
+"FirstName": "Joe",
+"JerseyNumber": "7",
+"Position": "1B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "11136",
+"LastName": "Escobar",
+"FirstName": "Eduardo",
+"JerseyNumber": "5",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10672",
+"LastName": "Rosario",
+"FirstName": "Eddie",
+"JerseyNumber": "20",
+"Position": "LF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10918",
+"LastName": "Lynn",
+"FirstName": "Lance",
+"JerseyNumber": "31",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "11135",
+"LastName": "Dozier",
+"FirstName": "Brian",
+"JerseyNumber": "2",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10670",
+"LastName": "Buxton",
+"FirstName": "Byron",
+"JerseyNumber": "25",
+"Position": "CF"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10668",
+"LastName": "Mauer",
+"FirstName": "Joe",
+"JerseyNumber": "7",
+"Position": "1B"
+}
+}
+]
+},
+"actual": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10670",
+"LastName": "Buxton",
+"FirstName": "Byron",
+"JerseyNumber": "25",
+"Position": "CF"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "11388",
+"LastName": "Castro",
+"FirstName": "Jason",
+"JerseyNumber": "15",
+"Position": "C"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11136",
+"LastName": "Escobar",
+"FirstName": "Eduardo",
+"JerseyNumber": "5",
+"Position": "SS"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10671",
+"LastName": "Kepler",
+"FirstName": "Max",
+"JerseyNumber": "26",
+"Position": "RF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10671",
+"LastName": "Kepler",
+"FirstName": "Max",
+"JerseyNumber": "26",
+"Position": "RF"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10675",
+"LastName": "Sano",
+"FirstName": "Miguel",
+"JerseyNumber": "22",
+"Position": "DH"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10918",
+"LastName": "Lynn",
+"FirstName": "Lance",
+"JerseyNumber": "31",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "11388",
+"LastName": "Castro",
+"FirstName": "Jason",
+"JerseyNumber": "15",
+"Position": "C"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10675",
+"LastName": "Sano",
+"FirstName": "Miguel",
+"JerseyNumber": "22",
+"Position": "DH"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10672",
+"LastName": "Rosario",
+"FirstName": "Eddie",
+"JerseyNumber": "20",
+"Position": "LF"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "11135",
+"LastName": "Dozier",
+"FirstName": "Brian",
+"JerseyNumber": "2",
+"Position": "2B"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10668",
+"LastName": "Mauer",
+"FirstName": "Joe",
+"JerseyNumber": "7",
+"Position": "1B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "11136",
+"LastName": "Escobar",
+"FirstName": "Eduardo",
+"JerseyNumber": "5",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10670",
+"LastName": "Buxton",
+"FirstName": "Byron",
+"JerseyNumber": "25",
+"Position": "CF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10918",
+"LastName": "Lynn",
+"FirstName": "Lance",
+"JerseyNumber": "31",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "11135",
+"LastName": "Dozier",
+"FirstName": "Brian",
+"JerseyNumber": "2",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10668",
+"LastName": "Mauer",
+"FirstName": "Joe",
+"JerseyNumber": "7",
+"Position": "1B"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10672",
+"LastName": "Rosario",
+"FirstName": "Eddie",
+"JerseyNumber": "20",
+"Position": "LF"
+}
+}
+]
+}
+},
+{
+"team": {
+"ID": "132",
+"City": "Pittsburgh",
+"Name": "Pirates",
+"Abbreviation": "PIT"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10499",
+"LastName": "Moran",
+"FirstName": "Colin",
+"JerseyNumber": "19",
+"Position": "3B"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10814",
+"LastName": "Mercer",
+"FirstName": "Jordy",
+"JerseyNumber": "10",
+"Position": "SS"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "10973",
+"LastName": "Dickerson",
+"FirstName": "Corey",
+"JerseyNumber": "12",
+"Position": "DH"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "11234",
+"LastName": "Bell",
+"FirstName": "Josh",
+"JerseyNumber": "55",
+"Position": "1B"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10806",
+"LastName": "Cervelli",
+"FirstName": "Francisco",
+"JerseyNumber": "29",
+"Position": "C"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10806",
+"LastName": "Cervelli",
+"FirstName": "Francisco",
+"JerseyNumber": "29",
+"Position": "C"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10803",
+"LastName": "Taillon",
+"FirstName": "Jameson",
+"JerseyNumber": "50",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10814",
+"LastName": "Mercer",
+"FirstName": "Jordy",
+"JerseyNumber": "10",
+"Position": "SS"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10818",
+"LastName": "Marte",
+"FirstName": "Starling",
+"JerseyNumber": "6",
+"Position": "LF"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "11234",
+"LastName": "Bell",
+"FirstName": "Josh",
+"JerseyNumber": "55",
+"Position": "1B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10811",
+"LastName": "Harrison",
+"FirstName": "Josh",
+"JerseyNumber": "5",
+"Position": "2B"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10819",
+"LastName": "Polanco",
+"FirstName": "Gregory",
+"JerseyNumber": "25",
+"Position": "RF"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10499",
+"LastName": "Moran",
+"FirstName": "Colin",
+"JerseyNumber": "19",
+"Position": "3B"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10818",
+"LastName": "Marte",
+"FirstName": "Starling",
+"JerseyNumber": "6",
+"Position": "LF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10803",
+"LastName": "Taillon",
+"FirstName": "Jameson",
+"JerseyNumber": "50",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "10811",
+"LastName": "Harrison",
+"FirstName": "Josh",
+"JerseyNumber": "5",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10973",
+"LastName": "Dickerson",
+"FirstName": "Corey",
+"JerseyNumber": "12",
+"Position": "DH"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10819",
+"LastName": "Polanco",
+"FirstName": "Gregory",
+"JerseyNumber": "25",
+"Position": "RF"
+}
+}
+]
+},
+"actual": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10499",
+"LastName": "Moran",
+"FirstName": "Colin",
+"JerseyNumber": "19",
+"Position": "3B"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10814",
+"LastName": "Mercer",
+"FirstName": "Jordy",
+"JerseyNumber": "10",
+"Position": "SS"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "10973",
+"LastName": "Dickerson",
+"FirstName": "Corey",
+"JerseyNumber": "12",
+"Position": "DH"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10819",
+"LastName": "Polanco",
+"FirstName": "Gregory",
+"JerseyNumber": "25",
+"Position": "RF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10806",
+"LastName": "Cervelli",
+"FirstName": "Francisco",
+"JerseyNumber": "29",
+"Position": "C"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10499",
+"LastName": "Moran",
+"FirstName": "Colin",
+"JerseyNumber": "19",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10803",
+"LastName": "Taillon",
+"FirstName": "Jameson",
+"JerseyNumber": "50",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10806",
+"LastName": "Cervelli",
+"FirstName": "Francisco",
+"JerseyNumber": "29",
+"Position": "C"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10818",
+"LastName": "Marte",
+"FirstName": "Starling",
+"JerseyNumber": "6",
+"Position": "LF"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "11234",
+"LastName": "Bell",
+"FirstName": "Josh",
+"JerseyNumber": "55",
+"Position": "1B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10811",
+"LastName": "Harrison",
+"FirstName": "Josh",
+"JerseyNumber": "5",
+"Position": "2B"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10819",
+"LastName": "Polanco",
+"FirstName": "Gregory",
+"JerseyNumber": "25",
+"Position": "RF"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10814",
+"LastName": "Mercer",
+"FirstName": "Jordy",
+"JerseyNumber": "10",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10818",
+"LastName": "Marte",
+"FirstName": "Starling",
+"JerseyNumber": "6",
+"Position": "LF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10803",
+"LastName": "Taillon",
+"FirstName": "Jameson",
+"JerseyNumber": "50",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "10811",
+"LastName": "Harrison",
+"FirstName": "Josh",
+"JerseyNumber": "5",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "11234",
+"LastName": "Bell",
+"FirstName": "Josh",
+"JerseyNumber": "55",
+"Position": "1B"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10973",
+"LastName": "Dickerson",
+"FirstName": "Corey",
+"JerseyNumber": "12",
+"Position": "DH"
+}
+}
+]
+}
+}
+]
+}
+},
+{
+"gamestartinglineup": {
+"lastUpdatedOn": "2018-04-02 1:22:03 PM",
+"game": {
+"id": "43480",
+"date": "2018-04-02",
+"time": "1:10PM",
+"awayTeam": {
+"ID": "118",
+"City": "Kansas City",
+"Name": "Royals",
+"Abbreviation": "KC"
+},
+"homeTeam": {
+"ID": "117",
+"City": "Detroit",
+"Name": "Tigers",
+"Abbreviation": "DET"
+},
+"location": "Comerica Park"
+},
+"teamLineup": [
+{
+"team": {
+"ID": "118",
+"City": "Kansas City",
+"Name": "Royals",
+"Abbreviation": "KC"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10533",
+"LastName": "Gordon",
+"FirstName": "Alex",
+"JerseyNumber": "4",
+"Position": "LF"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10527",
+"LastName": "Escobar",
+"FirstName": "Alcides",
+"JerseyNumber": "2",
+"Position": "SS"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "10535",
+"LastName": "Orlando",
+"FirstName": "Paulo",
+"JerseyNumber": "16",
+"Position": "RF"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10535",
+"LastName": "Orlando",
+"FirstName": "Paulo",
+"JerseyNumber": "16",
+"Position": "RF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10332",
+"LastName": "Soler",
+"FirstName": "Jorge",
+"JerseyNumber": "68",
+"Position": "LF"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10530",
+"LastName": "Moustakas",
+"FirstName": "Mike",
+"JerseyNumber": "8",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "11493",
+"LastName": "Butera",
+"FirstName": "Drew",
+"JerseyNumber": "9",
+"Position": "C"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10527",
+"LastName": "Escobar",
+"FirstName": "Alcides",
+"JerseyNumber": "2",
+"Position": "SS"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10530",
+"LastName": "Moustakas",
+"FirstName": "Mike",
+"JerseyNumber": "8",
+"Position": "3B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10695",
+"LastName": "Duda",
+"FirstName": "Lucas",
+"JerseyNumber": "21",
+"Position": "1B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "11364",
+"LastName": "Jay",
+"FirstName": "Jon",
+"JerseyNumber": "25",
+"Position": "OF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10529",
+"LastName": "Merrifield",
+"FirstName": "Whit",
+"JerseyNumber": "15",
+"Position": "2B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10533",
+"LastName": "Gordon",
+"FirstName": "Alex",
+"JerseyNumber": "4",
+"Position": "LF"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10695",
+"LastName": "Duda",
+"FirstName": "Lucas",
+"JerseyNumber": "21",
+"Position": "1B"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "11481",
+"LastName": "Hammel",
+"FirstName": "Jason",
+"JerseyNumber": "39",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": {
+"ID": "11493",
+"LastName": "Butera",
+"FirstName": "Drew",
+"JerseyNumber": "9",
+"Position": "C"
+}
+},
+{
+"position": "2B",
+"player": {
+"ID": "10529",
+"LastName": "Merrifield",
+"FirstName": "Whit",
+"JerseyNumber": "15",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10332",
+"LastName": "Soler",
+"FirstName": "Jorge",
+"JerseyNumber": "68",
+"Position": "LF"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "11364",
+"LastName": "Jay",
+"FirstName": "Jon",
+"JerseyNumber": "25",
+"Position": "OF"
+}
+}
+]
+},
+"actual": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10533",
+"LastName": "Gordon",
+"FirstName": "Alex",
+"JerseyNumber": "4",
+"Position": "LF"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10527",
+"LastName": "Escobar",
+"FirstName": "Alcides",
+"JerseyNumber": "2",
+"Position": "SS"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "10535",
+"LastName": "Orlando",
+"FirstName": "Paulo",
+"JerseyNumber": "16",
+"Position": "RF"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "11364",
+"LastName": "Jay",
+"FirstName": "Jon",
+"JerseyNumber": "25",
+"Position": "OF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10332",
+"LastName": "Soler",
+"FirstName": "Jorge",
+"JerseyNumber": "68",
+"Position": "LF"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10530",
+"LastName": "Moustakas",
+"FirstName": "Mike",
+"JerseyNumber": "8",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "11493",
+"LastName": "Butera",
+"FirstName": "Drew",
+"JerseyNumber": "9",
+"Position": "C"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "11493",
+"LastName": "Butera",
+"FirstName": "Drew",
+"JerseyNumber": "9",
+"Position": "C"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10530",
+"LastName": "Moustakas",
+"FirstName": "Mike",
+"JerseyNumber": "8",
+"Position": "3B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10695",
+"LastName": "Duda",
+"FirstName": "Lucas",
+"JerseyNumber": "21",
+"Position": "1B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "11364",
+"LastName": "Jay",
+"FirstName": "Jon",
+"JerseyNumber": "25",
+"Position": "OF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10529",
+"LastName": "Merrifield",
+"FirstName": "Whit",
+"JerseyNumber": "15",
+"Position": "2B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10527",
+"LastName": "Escobar",
+"FirstName": "Alcides",
+"JerseyNumber": "2",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10535",
+"LastName": "Orlando",
+"FirstName": "Paulo",
+"JerseyNumber": "16",
+"Position": "RF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "11481",
+"LastName": "Hammel",
+"FirstName": "Jason",
+"JerseyNumber": "39",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "10529",
+"LastName": "Merrifield",
+"FirstName": "Whit",
+"JerseyNumber": "15",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10695",
+"LastName": "Duda",
+"FirstName": "Lucas",
+"JerseyNumber": "21",
+"Position": "1B"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10533",
+"LastName": "Gordon",
+"FirstName": "Alex",
+"JerseyNumber": "4",
+"Position": "LF"
+}
+}
+]
+}
+},
+{
+"team": {
+"ID": "117",
+"City": "Detroit",
+"Name": "Tigers",
+"Abbreviation": "DET"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10971",
+"LastName": "Mahtook",
+"FirstName": "Mikie",
+"JerseyNumber": "27",
+"Position": "LF"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "13542",
+"LastName": "Goodrum",
+"FirstName": "Niko",
+"JerseyNumber": "28",
+"Position": "RF"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11113",
+"LastName": "Martinez",
+"FirstName": "Victor",
+"JerseyNumber": "41",
+"Position": "DH"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10469",
+"LastName": "Castellanos",
+"FirstName": "Nick",
+"JerseyNumber": "9",
+"Position": "3B"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10467",
+"LastName": "McCann",
+"FirstName": "James",
+"JerseyNumber": "34",
+"Position": "C"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "11219",
+"LastName": "Candelario",
+"FirstName": "Jeimer",
+"JerseyNumber": "7",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10472",
+"LastName": "Machado",
+"FirstName": "Dixon",
+"JerseyNumber": "49",
+"Position": "SS"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "13542",
+"LastName": "Goodrum",
+"FirstName": "Niko",
+"JerseyNumber": "28",
+"Position": "RF"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10468",
+"LastName": "Cabrera",
+"FirstName": "Miguel",
+"JerseyNumber": "24",
+"Position": "1B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10469",
+"LastName": "Castellanos",
+"FirstName": "Nick",
+"JerseyNumber": "9",
+"Position": "3B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10876",
+"LastName": "Martin",
+"FirstName": "Leonys",
+"JerseyNumber": "12",
+"Position": "CF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "11219",
+"LastName": "Candelario",
+"FirstName": "Jeimer",
+"JerseyNumber": "7",
+"Position": "3B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10971",
+"LastName": "Mahtook",
+"FirstName": "Mikie",
+"JerseyNumber": "27",
+"Position": "LF"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10468",
+"LastName": "Cabrera",
+"FirstName": "Miguel",
+"JerseyNumber": "24",
+"Position": "1B"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "11012",
+"LastName": "Liriano",
+"FirstName": "Francisco",
+"JerseyNumber": "38",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": {
+"ID": "10472",
+"LastName": "Machado",
+"FirstName": "Dixon",
+"JerseyNumber": "49",
+"Position": "SS"
+}
+},
+{
+"position": "2B",
+"player": {
+"ID": "10467",
+"LastName": "McCann",
+"FirstName": "James",
+"JerseyNumber": "34",
+"Position": "C"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "11113",
+"LastName": "Martinez",
+"FirstName": "Victor",
+"JerseyNumber": "41",
+"Position": "DH"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10876",
+"LastName": "Martin",
+"FirstName": "Leonys",
+"JerseyNumber": "12",
+"Position": "CF"
+}
+}
+]
+},
+"actual": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10971",
+"LastName": "Mahtook",
+"FirstName": "Mikie",
+"JerseyNumber": "27",
+"Position": "LF"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "13542",
+"LastName": "Goodrum",
+"FirstName": "Niko",
+"JerseyNumber": "28",
+"Position": "RF"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11113",
+"LastName": "Martinez",
+"FirstName": "Victor",
+"JerseyNumber": "41",
+"Position": "DH"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10469",
+"LastName": "Castellanos",
+"FirstName": "Nick",
+"JerseyNumber": "9",
+"Position": "3B"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10467",
+"LastName": "McCann",
+"FirstName": "James",
+"JerseyNumber": "34",
+"Position": "C"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "11219",
+"LastName": "Candelario",
+"FirstName": "Jeimer",
+"JerseyNumber": "7",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10472",
+"LastName": "Machado",
+"FirstName": "Dixon",
+"JerseyNumber": "49",
+"Position": "SS"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10467",
+"LastName": "McCann",
+"FirstName": "James",
+"JerseyNumber": "34",
+"Position": "C"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10468",
+"LastName": "Cabrera",
+"FirstName": "Miguel",
+"JerseyNumber": "24",
+"Position": "1B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10469",
+"LastName": "Castellanos",
+"FirstName": "Nick",
+"JerseyNumber": "9",
+"Position": "3B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10876",
+"LastName": "Martin",
+"FirstName": "Leonys",
+"JerseyNumber": "12",
+"Position": "CF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "11219",
+"LastName": "Candelario",
+"FirstName": "Jeimer",
+"JerseyNumber": "7",
+"Position": "3B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "13542",
+"LastName": "Goodrum",
+"FirstName": "Niko",
+"JerseyNumber": "28",
+"Position": "RF"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10876",
+"LastName": "Martin",
+"FirstName": "Leonys",
+"JerseyNumber": "12",
+"Position": "CF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "11012",
+"LastName": "Liriano",
+"FirstName": "Francisco",
+"JerseyNumber": "38",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "10472",
+"LastName": "Machado",
+"FirstName": "Dixon",
+"JerseyNumber": "49",
+"Position": "SS"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10468",
+"LastName": "Cabrera",
+"FirstName": "Miguel",
+"JerseyNumber": "24",
+"Position": "1B"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10971",
+"LastName": "Mahtook",
+"FirstName": "Mikie",
+"JerseyNumber": "27",
+"Position": "LF"
+}
+}
+]
+}
+}
+]
+}
+},
+{
+"gamestartinglineup": {
+"lastUpdatedOn": "2018-04-02 1:27:46 PM",
+"game": {
+"id": "43481",
+"date": "2018-04-02",
+"time": "2:10PM",
+"awayTeam": {
+"ID": "133",
+"City": "St. Louis",
+"Name": "Cardinals",
+"Abbreviation": "STL"
+},
+"homeTeam": {
+"ID": "134",
+"City": "Milwaukee",
+"Name": "Brewers",
+"Abbreviation": "MIL"
+},
+"location": "Miller Park"
+},
+"teamLineup": [
+{
+"team": {
+"ID": "133",
+"City": "St. Louis",
+"Name": "Cardinals",
+"Abbreviation": "STL"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "12528",
+"LastName": "Dejong",
+"FirstName": "Paul",
+"JerseyNumber": "11",
+"Position": "3B"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "11229",
+"LastName": "Gyorko",
+"FirstName": "Jedd",
+"JerseyNumber": "3",
+"Position": "2B"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "10940",
+"LastName": "Martinez",
+"FirstName": "Jose",
+"JerseyNumber": "58",
+"Position": "LF"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10615",
+"LastName": "Ozuna",
+"FirstName": "Marcell",
+"JerseyNumber": "13",
+"Position": "CF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "11227",
+"LastName": "Molina",
+"FirstName": "Yadier",
+"JerseyNumber": "4",
+"Position": "C"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10933",
+"LastName": "Carpenter",
+"FirstName": "Matt",
+"JerseyNumber": "13",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "13991",
+"LastName": "Mikolas",
+"FirstName": "Miles",
+"JerseyNumber": null,
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "11229",
+"LastName": "Gyorko",
+"FirstName": "Jedd",
+"JerseyNumber": "3",
+"Position": "2B"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10933",
+"LastName": "Carpenter",
+"FirstName": "Matt",
+"JerseyNumber": "13",
+"Position": "3B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10615",
+"LastName": "Ozuna",
+"FirstName": "Marcell",
+"JerseyNumber": "13",
+"Position": "CF"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "11224",
+"LastName": "Fowler",
+"FirstName": "Dexter",
+"JerseyNumber": "24",
+"Position": "CF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10941",
+"LastName": "Pham",
+"FirstName": "Tommy",
+"JerseyNumber": "28",
+"Position": "CF"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "12528",
+"LastName": "Dejong",
+"FirstName": "Paul",
+"JerseyNumber": "11",
+"Position": "3B"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10941",
+"LastName": "Pham",
+"FirstName": "Tommy",
+"JerseyNumber": "28",
+"Position": "CF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "13991",
+"LastName": "Mikolas",
+"FirstName": "Miles",
+"JerseyNumber": null,
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "11227",
+"LastName": "Molina",
+"FirstName": "Yadier",
+"JerseyNumber": "4",
+"Position": "C"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10940",
+"LastName": "Martinez",
+"FirstName": "Jose",
+"JerseyNumber": "58",
+"Position": "LF"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "11224",
+"LastName": "Fowler",
+"FirstName": "Dexter",
+"JerseyNumber": "24",
+"Position": "CF"
+}
+}
+]
+},
+"actual": null
+},
+{
+"team": {
+"ID": "134",
+"City": "Milwaukee",
+"Name": "Brewers",
+"Abbreviation": "MIL"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "11244",
+"LastName": "Villar",
+"FirstName": "Jonathan",
+"JerseyNumber": "5",
+"Position": "SS"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10639",
+"LastName": "Arcia",
+"FirstName": "Orlando",
+"JerseyNumber": "3",
+"Position": "SS"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "12422",
+"LastName": "Thames",
+"FirstName": "Eric",
+"JerseyNumber": "7",
+"Position": "1B"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10643",
+"LastName": "Braun",
+"FirstName": "Ryan",
+"JerseyNumber": "8",
+"Position": "LF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10637",
+"LastName": "Pina",
+"FirstName": "Manny",
+"JerseyNumber": "9",
+"Position": "C"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10302",
+"LastName": "Shaw",
+"FirstName": "Travis",
+"JerseyNumber": "47",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10622",
+"LastName": "Davies",
+"FirstName": "Zach",
+"JerseyNumber": "27",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10639",
+"LastName": "Arcia",
+"FirstName": "Orlando",
+"JerseyNumber": "3",
+"Position": "SS"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10643",
+"LastName": "Braun",
+"FirstName": "Ryan",
+"JerseyNumber": "8",
+"Position": "LF"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10302",
+"LastName": "Shaw",
+"FirstName": "Travis",
+"JerseyNumber": "47",
+"Position": "3B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10532",
+"LastName": "Cain",
+"FirstName": "Lorenzo",
+"JerseyNumber": "6",
+"Position": "CF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10617",
+"LastName": "Yelich",
+"FirstName": "Christian",
+"JerseyNumber": "21",
+"Position": "CF"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "11244",
+"LastName": "Villar",
+"FirstName": "Jonathan",
+"JerseyNumber": "5",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10617",
+"LastName": "Yelich",
+"FirstName": "Christian",
+"JerseyNumber": "21",
+"Position": "CF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10622",
+"LastName": "Davies",
+"FirstName": "Zach",
+"JerseyNumber": "27",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "10637",
+"LastName": "Pina",
+"FirstName": "Manny",
+"JerseyNumber": "9",
+"Position": "C"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "12422",
+"LastName": "Thames",
+"FirstName": "Eric",
+"JerseyNumber": "7",
+"Position": "1B"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10532",
+"LastName": "Cain",
+"FirstName": "Lorenzo",
+"JerseyNumber": "6",
+"Position": "CF"
+}
+}
+]
+},
+"actual": null
+}
+]
+}
+},
+{
+"gamestartinglineup": {
+"lastUpdatedOn": "2018-04-02 1:27:46 PM",
+"game": {
+"id": "43482",
+"date": "2018-04-02",
+"time": "4:10PM",
+"awayTeam": {
+"ID": "131",
+"City": "Chicago",
+"Name": "Cubs",
+"Abbreviation": "CHC"
+},
+"homeTeam": {
+"ID": "135",
+"City": "Cincinnati",
+"Name": "Reds",
+"Abbreviation": "CIN"
+},
+"location": "Great American Ball Park"
+},
+"teamLineup": [
+{
+"team": {
+"ID": "131",
+"City": "Chicago",
+"Name": "Cubs",
+"Abbreviation": "CHC"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10330",
+"LastName": "Heyward",
+"FirstName": "Jason",
+"JerseyNumber": "22",
+"Position": "RF"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10325",
+"LastName": "Baez",
+"FirstName": "Javier",
+"JerseyNumber": "9",
+"Position": "3B"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "10331",
+"LastName": "Schwarber",
+"FirstName": "Kyle",
+"JerseyNumber": "12",
+"Position": "LF"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10324",
+"LastName": "Contreras",
+"FirstName": "Willson",
+"JerseyNumber": "40",
+"Position": "C"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10328",
+"LastName": "Russell",
+"FirstName": "Addison",
+"JerseyNumber": "27",
+"Position": "SS"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10326",
+"LastName": "Bryant",
+"FirstName": "Kris",
+"JerseyNumber": "17",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10393",
+"LastName": "Chatwood",
+"FirstName": "Tyler",
+"JerseyNumber": "21",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10325",
+"LastName": "Baez",
+"FirstName": "Javier",
+"JerseyNumber": "9",
+"Position": "3B"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10327",
+"LastName": "Rizzo",
+"FirstName": "Anthony",
+"JerseyNumber": "44",
+"Position": "1B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10324",
+"LastName": "Contreras",
+"FirstName": "Willson",
+"JerseyNumber": "40",
+"Position": "C"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "12361",
+"LastName": "Happ",
+"FirstName": "Ian",
+"JerseyNumber": "86",
+"Position": "2B"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10326",
+"LastName": "Bryant",
+"FirstName": "Kris",
+"JerseyNumber": "17",
+"Position": "3B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10328",
+"LastName": "Russell",
+"FirstName": "Addison",
+"JerseyNumber": "27",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10327",
+"LastName": "Rizzo",
+"FirstName": "Anthony",
+"JerseyNumber": "44",
+"Position": "1B"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10393",
+"LastName": "Chatwood",
+"FirstName": "Tyler",
+"JerseyNumber": "21",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "10330",
+"LastName": "Heyward",
+"FirstName": "Jason",
+"JerseyNumber": "22",
+"Position": "RF"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10331",
+"LastName": "Schwarber",
+"FirstName": "Kyle",
+"JerseyNumber": "12",
+"Position": "LF"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "12361",
+"LastName": "Happ",
+"FirstName": "Ian",
+"JerseyNumber": "86",
+"Position": "2B"
+}
+}
+]
+},
+"actual": null
+},
+{
+"team": {
+"ID": "135",
+"City": "Cincinnati",
+"Name": "Reds",
+"Abbreviation": "CIN"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "11247",
+"LastName": "Barnhart",
+"FirstName": "Tucker",
+"JerseyNumber": "16",
+"Position": "C"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "11252",
+"LastName": "Hamilton",
+"FirstName": "Billy",
+"JerseyNumber": "6",
+"Position": "CF"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11251",
+"LastName": "Suarez",
+"FirstName": "Eugenio",
+"JerseyNumber": "7",
+"Position": "3B"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "11243",
+"LastName": "Gennett",
+"FirstName": "Scooter",
+"JerseyNumber": "2",
+"Position": "2B"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10355",
+"LastName": "Duvall",
+"FirstName": "Adam",
+"JerseyNumber": "23",
+"Position": "LF"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "11251",
+"LastName": "Suarez",
+"FirstName": "Eugenio",
+"JerseyNumber": "7",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "12640",
+"LastName": "Mahle",
+"FirstName": "Tyler",
+"JerseyNumber": "38",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "11252",
+"LastName": "Hamilton",
+"FirstName": "Billy",
+"JerseyNumber": "6",
+"Position": "CF"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10354",
+"LastName": "Votto",
+"FirstName": "Joey",
+"JerseyNumber": "19",
+"Position": "1B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "11243",
+"LastName": "Gennett",
+"FirstName": "Scooter",
+"JerseyNumber": "2",
+"Position": "2B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "12415",
+"LastName": "Winker",
+"FirstName": "Jesse",
+"JerseyNumber": "33",
+"Position": "LF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "11174",
+"LastName": "Pennington",
+"FirstName": "Cliff",
+"JerseyNumber": "7",
+"Position": "2B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "11247",
+"LastName": "Barnhart",
+"FirstName": "Tucker",
+"JerseyNumber": "16",
+"Position": "C"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10354",
+"LastName": "Votto",
+"FirstName": "Joey",
+"JerseyNumber": "19",
+"Position": "1B"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "12640",
+"LastName": "Mahle",
+"FirstName": "Tyler",
+"JerseyNumber": "38",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "11174",
+"LastName": "Pennington",
+"FirstName": "Cliff",
+"JerseyNumber": "7",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10355",
+"LastName": "Duvall",
+"FirstName": "Adam",
+"JerseyNumber": "23",
+"Position": "LF"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "12415",
+"LastName": "Winker",
+"FirstName": "Jesse",
+"JerseyNumber": "33",
+"Position": "LF"
+}
+}
+]
+},
+"actual": null
+}
+]
+}
+},
+{
+"gamestartinglineup": {
+"lastUpdatedOn": "2018-04-02 9:55:21 AM",
+"game": {
+"id": "43483",
+"date": "2018-04-02",
+"time": "7:07PM",
+"awayTeam": {
+"ID": "119",
+"City": "Chicago",
+"Name": "White Sox",
+"Abbreviation": "CWS"
+},
+"homeTeam": {
+"ID": "112",
+"City": "Toronto",
+"Name": "Blue Jays",
+"Abbreviation": "TOR"
+},
+"location": "Rogers Centre"
+},
+"teamLineup": [
+{
+"team": {
+"ID": "119",
+"City": "Chicago",
+"Name": "White Sox",
+"Abbreviation": "CWS"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10438",
+"LastName": "Anderson",
+"FirstName": "Tim",
+"JerseyNumber": "12",
+"Position": "SS"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "11129",
+"LastName": "Sanchez",
+"FirstName": "Yolmer",
+"JerseyNumber": "5",
+"Position": "2B"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "12636",
+"LastName": "Delmonico",
+"FirstName": "Nicky",
+"JerseyNumber": "30",
+"Position": "3B"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "12636",
+"LastName": "Delmonico",
+"FirstName": "Nicky",
+"JerseyNumber": "30",
+"Position": "3B"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "11272",
+"LastName": "Castillo",
+"FirstName": "Welington",
+"JerseyNumber": "7",
+"Position": "C"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10439",
+"LastName": "Davidson",
+"FirstName": "Matt",
+"JerseyNumber": "24",
+"Position": "DH"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "12524",
+"LastName": "Engel",
+"FirstName": "Adam",
+"JerseyNumber": "41",
+"Position": "CF"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "11129",
+"LastName": "Sanchez",
+"FirstName": "Yolmer",
+"JerseyNumber": "5",
+"Position": "2B"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10437",
+"LastName": "Abreu",
+"FirstName": "Jose",
+"JerseyNumber": "79",
+"Position": "1B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10439",
+"LastName": "Davidson",
+"FirstName": "Matt",
+"JerseyNumber": "24",
+"Position": "DH"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "11062",
+"LastName": "Moncada",
+"FirstName": "Yoan",
+"JerseyNumber": "65",
+"Position": "3B"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10445",
+"LastName": "Garcia",
+"FirstName": "Avisail",
+"JerseyNumber": "26",
+"Position": "DH"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10438",
+"LastName": "Anderson",
+"FirstName": "Tim",
+"JerseyNumber": "12",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10437",
+"LastName": "Abreu",
+"FirstName": "Jose",
+"JerseyNumber": "79",
+"Position": "1B"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "11037",
+"LastName": "Lopez",
+"FirstName": "Reynaldo",
+"JerseyNumber": "49",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": {
+"ID": "12524",
+"LastName": "Engel",
+"FirstName": "Adam",
+"JerseyNumber": "41",
+"Position": "CF"
+}
+},
+{
+"position": "2B",
+"player": {
+"ID": "11062",
+"LastName": "Moncada",
+"FirstName": "Yoan",
+"JerseyNumber": "65",
+"Position": "3B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "11272",
+"LastName": "Castillo",
+"FirstName": "Welington",
+"JerseyNumber": "7",
+"Position": "C"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10445",
+"LastName": "Garcia",
+"FirstName": "Avisail",
+"JerseyNumber": "26",
+"Position": "DH"
+}
+}
+]
+},
+"actual": null
+},
+{
+"team": {
+"ID": "112",
+"City": "Toronto",
+"Name": "Blue Jays",
+"Abbreviation": "TOR"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "11074",
+"LastName": "Martin",
+"FirstName": "Russell",
+"JerseyNumber": "55",
+"Position": "C"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "11027",
+"LastName": "Pillar",
+"FirstName": "Kevin",
+"JerseyNumber": "11",
+"Position": "CF"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11281",
+"LastName": "Solarte",
+"FirstName": "Yangervis",
+"JerseyNumber": "26",
+"Position": "2B"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "11281",
+"LastName": "Solarte",
+"FirstName": "Yangervis",
+"JerseyNumber": "26",
+"Position": "2B"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10939",
+"LastName": "Grichuk",
+"FirstName": "Randal",
+"JerseyNumber": "15",
+"Position": "LF"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "11022",
+"LastName": "Donaldson",
+"FirstName": "Josh",
+"JerseyNumber": "20",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10934",
+"LastName": "Diaz",
+"FirstName": "Aledmys",
+"JerseyNumber": "1",
+"Position": "SS"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "11027",
+"LastName": "Pillar",
+"FirstName": "Kevin",
+"JerseyNumber": "11",
+"Position": "CF"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "11077",
+"LastName": "Smoak",
+"FirstName": "Justin",
+"JerseyNumber": "14",
+"Position": "1B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10702",
+"LastName": "Granderson",
+"FirstName": "Curtis",
+"JerseyNumber": "18",
+"Position": "LF"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "11023",
+"LastName": "Travis",
+"FirstName": "Devon",
+"JerseyNumber": "29",
+"Position": "2B"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "11022",
+"LastName": "Donaldson",
+"FirstName": "Josh",
+"JerseyNumber": "20",
+"Position": "3B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "11074",
+"LastName": "Martin",
+"FirstName": "Russell",
+"JerseyNumber": "55",
+"Position": "C"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10702",
+"LastName": "Granderson",
+"FirstName": "Curtis",
+"JerseyNumber": "18",
+"Position": "LF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "11017",
+"LastName": "Stroman",
+"FirstName": "Marcus",
+"JerseyNumber": "6",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": {
+"ID": "10934",
+"LastName": "Diaz",
+"FirstName": "Aledmys",
+"JerseyNumber": "1",
+"Position": "SS"
+}
+},
+{
+"position": "2B",
+"player": {
+"ID": "11023",
+"LastName": "Travis",
+"FirstName": "Devon",
+"JerseyNumber": "29",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10939",
+"LastName": "Grichuk",
+"FirstName": "Randal",
+"JerseyNumber": "15",
+"Position": "LF"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "11077",
+"LastName": "Smoak",
+"FirstName": "Justin",
+"JerseyNumber": "14",
+"Position": "1B"
+}
+}
+]
+},
+"actual": null
+}
+]
+}
+},
+{
+"gamestartinglineup": {
+"lastUpdatedOn": "2018-04-02 9:55:21 AM",
+"game": {
+"id": "43484",
+"date": "2018-04-02",
+"time": "7:10PM",
+"awayTeam": {
+"ID": "113",
+"City": "Boston",
+"Name": "Red Sox",
+"Abbreviation": "BOS"
+},
+"homeTeam": {
+"ID": "128",
+"City": "Miami",
+"Name": "Marlins",
+"Abbreviation": "MIA"
+},
+"location": "Marlins Park"
+},
+"teamLineup": [
+{
+"team": {
+"ID": "113",
+"City": "Boston",
+"Name": "Red Sox",
+"Abbreviation": "BOS"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "11065",
+"LastName": "Bradley Jr.",
+"FirstName": "Jackie",
+"JerseyNumber": "25",
+"Position": "CF"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "11067",
+"LastName": "Swihart",
+"FirstName": "Blake",
+"JerseyNumber": "23",
+"Position": "LF"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11339",
+"LastName": "Moreland",
+"FirstName": "Mitch",
+"JerseyNumber": "18",
+"Position": "1B"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10303",
+"LastName": "Betts",
+"FirstName": "Mookie",
+"JerseyNumber": "50",
+"Position": "RF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10296",
+"LastName": "Vazquez",
+"FirstName": "Christian",
+"JerseyNumber": "7",
+"Position": "C"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "12551",
+"LastName": "Devers",
+"FirstName": "Rafael",
+"JerseyNumber": "11",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "11066",
+"LastName": "Holt",
+"FirstName": "Brock",
+"JerseyNumber": "12",
+"Position": "LF"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10296",
+"LastName": "Vazquez",
+"FirstName": "Christian",
+"JerseyNumber": "7",
+"Position": "C"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10474",
+"LastName": "Martinez",
+"FirstName": "J.D.",
+"JerseyNumber": "28",
+"Position": "RF"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10297",
+"LastName": "Bogaerts",
+"FirstName": "Xander",
+"JerseyNumber": "2",
+"Position": "SS"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10303",
+"LastName": "Betts",
+"FirstName": "Mookie",
+"JerseyNumber": "50",
+"Position": "RF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "12551",
+"LastName": "Devers",
+"FirstName": "Rafael",
+"JerseyNumber": "11",
+"Position": "3B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10297",
+"LastName": "Bogaerts",
+"FirstName": "Xander",
+"JerseyNumber": "2",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "11065",
+"LastName": "Bradley Jr.",
+"FirstName": "Jackie",
+"JerseyNumber": "25",
+"Position": "CF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10283",
+"LastName": "Johnson",
+"FirstName": "Brian",
+"JerseyNumber": null,
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "11066",
+"LastName": "Holt",
+"FirstName": "Brock",
+"JerseyNumber": "12",
+"Position": "LF"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "11339",
+"LastName": "Moreland",
+"FirstName": "Mitch",
+"JerseyNumber": "18",
+"Position": "1B"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10474",
+"LastName": "Martinez",
+"FirstName": "J.D.",
+"JerseyNumber": "28",
+"Position": "RF"
+}
+}
+]
+},
+"actual": null
+},
+{
+"team": {
+"ID": "128",
+"City": "Miami",
+"Name": "Marlins",
+"Abbreviation": "MIA"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10642",
+"LastName": "Rivera",
+"FirstName": "Yadiel",
+"JerseyNumber": "29",
+"Position": "SS"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "13372",
+"LastName": "Wallach",
+"FirstName": "Chad",
+"JerseyNumber": "49",
+"Position": "C"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "12617",
+"LastName": "Cooper",
+"FirstName": "Garrett",
+"JerseyNumber": "64",
+"Position": "1B"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "11177",
+"LastName": "Maybin",
+"FirstName": "Cameron",
+"JerseyNumber": "1",
+"Position": "LF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "11177",
+"LastName": "Maybin",
+"FirstName": "Cameron",
+"JerseyNumber": "1",
+"Position": "LF"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "12271",
+"LastName": "Anderson",
+"FirstName": "Brian",
+"JerseyNumber": "87",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "13536",
+"LastName": "Peters",
+"FirstName": "Dillon",
+"JerseyNumber": "31",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "13372",
+"LastName": "Wallach",
+"FirstName": "Chad",
+"JerseyNumber": "49",
+"Position": "C"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10729",
+"LastName": "Castro",
+"FirstName": "Starlin",
+"JerseyNumber": "14",
+"Position": "2B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "12271",
+"LastName": "Anderson",
+"FirstName": "Brian",
+"JerseyNumber": "87",
+"Position": "3B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "12557",
+"LastName": "Brinson",
+"FirstName": "Lewis",
+"JerseyNumber": "75",
+"Position": "CF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10611",
+"LastName": "Dietrich",
+"FirstName": "Derek",
+"JerseyNumber": "32",
+"Position": "2B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10642",
+"LastName": "Rivera",
+"FirstName": "Yadiel",
+"JerseyNumber": "29",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "12557",
+"LastName": "Brinson",
+"FirstName": "Lewis",
+"JerseyNumber": "75",
+"Position": "CF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "14379",
+"LastName": "Richards",
+"FirstName": "Trevor",
+"JerseyNumber": "23",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "10729",
+"LastName": "Castro",
+"FirstName": "Starlin",
+"JerseyNumber": "14",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "12617",
+"LastName": "Cooper",
+"FirstName": "Garrett",
+"JerseyNumber": "64",
+"Position": "1B"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10611",
+"LastName": "Dietrich",
+"FirstName": "Derek",
+"JerseyNumber": "32",
+"Position": "2B"
+}
+}
+]
+},
+"actual": null
+}
+]
+}
+},
+{
+"gamestartinglineup": {
+"lastUpdatedOn": "2018-04-02 9:55:21 AM",
+"game": {
+"id": "43485",
+"date": "2018-04-02",
+"time": "7:10PM",
+"awayTeam": {
+"ID": "129",
+"City": "Philadelphia",
+"Name": "Phillies",
+"Abbreviation": "PHI"
+},
+"homeTeam": {
+"ID": "127",
+"City": "New York",
+"Name": "Mets",
+"Abbreviation": "NYM"
+},
+"location": "Citi Field"
+},
+"teamLineup": [
+{
+"team": {
+"ID": "129",
+"City": "Philadelphia",
+"Name": "Phillies",
+"Abbreviation": "PHI"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10786",
+"LastName": "Franco",
+"FirstName": "Maikel",
+"JerseyNumber": "7",
+"Position": "3B"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10784",
+"LastName": "Alfaro",
+"FirstName": "Jorge",
+"JerseyNumber": "38",
+"Position": "C"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "12256",
+"LastName": "Williams",
+"FirstName": "Nick",
+"JerseyNumber": "65",
+"Position": "LF"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "12258",
+"LastName": "Hoskins",
+"FirstName": "Rhys",
+"JerseyNumber": "70",
+"Position": "1B"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "12253",
+"LastName": "Kingery",
+"FirstName": "Scott",
+"JerseyNumber": "80",
+"Position": "2B"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "12253",
+"LastName": "Kingery",
+"FirstName": "Scott",
+"JerseyNumber": "80",
+"Position": "2B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "12390",
+"LastName": "Lively",
+"FirstName": "Edward",
+"JerseyNumber": "72",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10784",
+"LastName": "Alfaro",
+"FirstName": "Jorge",
+"JerseyNumber": "38",
+"Position": "C"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "11209",
+"LastName": "Herrera",
+"FirstName": "Odubel",
+"JerseyNumber": "37",
+"Position": "CF"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "12258",
+"LastName": "Hoskins",
+"FirstName": "Rhys",
+"JerseyNumber": "70",
+"Position": "1B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "11208",
+"LastName": "Hernandez",
+"FirstName": "Cesar",
+"JerseyNumber": "16",
+"Position": "2B"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "11107",
+"LastName": "Santana",
+"FirstName": "Carlos",
+"JerseyNumber": "41",
+"Position": "DH"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10786",
+"LastName": "Franco",
+"FirstName": "Maikel",
+"JerseyNumber": "7",
+"Position": "3B"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "11209",
+"LastName": "Herrera",
+"FirstName": "Odubel",
+"JerseyNumber": "37",
+"Position": "CF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "12390",
+"LastName": "Lively",
+"FirstName": "Edward",
+"JerseyNumber": "72",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "11208",
+"LastName": "Hernandez",
+"FirstName": "Cesar",
+"JerseyNumber": "16",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "12256",
+"LastName": "Williams",
+"FirstName": "Nick",
+"JerseyNumber": "65",
+"Position": "LF"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "11107",
+"LastName": "Santana",
+"FirstName": "Carlos",
+"JerseyNumber": "41",
+"Position": "DH"
+}
+}
+]
+},
+"actual": null
+},
+{
+"team": {
+"ID": "127",
+"City": "New York",
+"Name": "Mets",
+"Abbreviation": "NYM"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10584",
+"LastName": "Gonzalez",
+"FirstName": "Adrian",
+"JerseyNumber": "23",
+"Position": "1B"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10682",
+"LastName": "Harvey",
+"FirstName": "Matt",
+"JerseyNumber": "33",
+"Position": "P"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "10440",
+"LastName": "Frazier",
+"FirstName": "Todd",
+"JerseyNumber": "21",
+"Position": "3B"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10700",
+"LastName": "Bruce",
+"FirstName": "Jay",
+"JerseyNumber": "19",
+"Position": "RF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10692",
+"LastName": "d'Arnaud",
+"FirstName": "Travis",
+"JerseyNumber": "18",
+"Position": "C"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10440",
+"LastName": "Frazier",
+"FirstName": "Todd",
+"JerseyNumber": "21",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "12552",
+"LastName": "Rosario",
+"FirstName": "Amed",
+"JerseyNumber": "61",
+"Position": "SS"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "12552",
+"LastName": "Rosario",
+"FirstName": "Amed",
+"JerseyNumber": "61",
+"Position": "SS"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10700",
+"LastName": "Bruce",
+"FirstName": "Jay",
+"JerseyNumber": "19",
+"Position": "RF"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "11193",
+"LastName": "Cabrera",
+"FirstName": "Asdrubal",
+"JerseyNumber": "13",
+"Position": "SS"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10704",
+"LastName": "Nimmo",
+"FirstName": "Brandon",
+"JerseyNumber": "9",
+"Position": "CF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "11197",
+"LastName": "Cespedes",
+"FirstName": "Yoenis",
+"JerseyNumber": "52",
+"Position": "CF"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10584",
+"LastName": "Gonzalez",
+"FirstName": "Adrian",
+"JerseyNumber": "23",
+"Position": "1B"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "11197",
+"LastName": "Cespedes",
+"FirstName": "Yoenis",
+"JerseyNumber": "52",
+"Position": "CF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10682",
+"LastName": "Harvey",
+"FirstName": "Matt",
+"JerseyNumber": "33",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "11193",
+"LastName": "Cabrera",
+"FirstName": "Asdrubal",
+"JerseyNumber": "13",
+"Position": "SS"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10692",
+"LastName": "d'Arnaud",
+"FirstName": "Travis",
+"JerseyNumber": "18",
+"Position": "C"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10704",
+"LastName": "Nimmo",
+"FirstName": "Brandon",
+"JerseyNumber": "9",
+"Position": "CF"
+}
+}
+]
+},
+"actual": null
+}
+]
+}
+},
+{
+"gamestartinglineup": {
+"lastUpdatedOn": "2018-04-02 9:55:21 AM",
+"game": {
+"id": "43487",
+"date": "2018-04-02",
+"time": "7:10PM",
+"awayTeam": {
+"ID": "111",
+"City": "Baltimore",
+"Name": "Orioles",
+"Abbreviation": "BAL"
+},
+"homeTeam": {
+"ID": "122",
+"City": "Houston",
+"Name": "Astros",
+"Abbreviation": "HOU"
+},
+"location": "Minute Maid Park"
+},
+"teamLineup": [
+{
+"team": {
+"ID": "111",
+"City": "Baltimore",
+"Name": "Orioles",
+"Abbreviation": "BAL"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "11390",
+"LastName": "Rasmus",
+"FirstName": "Colby",
+"JerseyNumber": "28",
+"Position": "LF"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10962",
+"LastName": "Beckham",
+"FirstName": "Tim",
+"JerseyNumber": "1",
+"Position": "SS"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "10269",
+"LastName": "Mancini",
+"FirstName": "Trey",
+"JerseyNumber": "67",
+"Position": "1B"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10269",
+"LastName": "Mancini",
+"FirstName": "Trey",
+"JerseyNumber": "67",
+"Position": "1B"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "11333",
+"LastName": "Alvarez",
+"FirstName": "Pedro",
+"JerseyNumber": "24",
+"Position": "DH"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "11390",
+"LastName": "Rasmus",
+"FirstName": "Colby",
+"JerseyNumber": "28",
+"Position": "LF"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10263",
+"LastName": "Joseph",
+"FirstName": "Caleb",
+"JerseyNumber": "36",
+"Position": "C"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10962",
+"LastName": "Beckham",
+"FirstName": "Tim",
+"JerseyNumber": "1",
+"Position": "SS"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10270",
+"LastName": "Schoop",
+"FirstName": "Jonathan",
+"JerseyNumber": "6",
+"Position": "2B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10272",
+"LastName": "Jones",
+"FirstName": "Adam",
+"JerseyNumber": "10",
+"Position": "CF"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10265",
+"LastName": "Davis",
+"FirstName": "Chris",
+"JerseyNumber": "19",
+"Position": "1B"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10268",
+"LastName": "Machado",
+"FirstName": "Manny",
+"JerseyNumber": "13",
+"Position": "3B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10268",
+"LastName": "Machado",
+"FirstName": "Manny",
+"JerseyNumber": "13",
+"Position": "3B"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10272",
+"LastName": "Jones",
+"FirstName": "Adam",
+"JerseyNumber": "10",
+"Position": "CF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10259",
+"LastName": "Tillman",
+"FirstName": "Chris",
+"JerseyNumber": "30",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": {
+"ID": "10263",
+"LastName": "Joseph",
+"FirstName": "Caleb",
+"JerseyNumber": "36",
+"Position": "C"
+}
+},
+{
+"position": "2B",
+"player": {
+"ID": "10270",
+"LastName": "Schoop",
+"FirstName": "Jonathan",
+"JerseyNumber": "6",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "11333",
+"LastName": "Alvarez",
+"FirstName": "Pedro",
+"JerseyNumber": "24",
+"Position": "DH"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10265",
+"LastName": "Davis",
+"FirstName": "Chris",
+"JerseyNumber": "19",
+"Position": "1B"
+}
+}
+]
+},
+"actual": null
+},
+{
+"team": {
+"ID": "122",
+"City": "Houston",
+"Name": "Astros",
+"Abbreviation": "HOU"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10494",
+"LastName": "Gattis",
+"FirstName": "Evan",
+"JerseyNumber": "11",
+"Position": "C"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "12279",
+"LastName": "Davis",
+"FirstName": "J.D.",
+"JerseyNumber": "73",
+"Position": "3B"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "10496",
+"LastName": "Bregman",
+"FirstName": "Alex",
+"JerseyNumber": "2",
+"Position": "3B"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "11163",
+"LastName": "Gonzalez",
+"FirstName": "Marwin",
+"JerseyNumber": "9",
+"Position": "1B"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "11163",
+"LastName": "Gonzalez",
+"FirstName": "Marwin",
+"JerseyNumber": "9",
+"Position": "1B"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10496",
+"LastName": "Bregman",
+"FirstName": "Alex",
+"JerseyNumber": "2",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10724",
+"LastName": "McCann",
+"FirstName": "Brian",
+"JerseyNumber": "34",
+"Position": "C"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "12279",
+"LastName": "Davis",
+"FirstName": "J.D.",
+"JerseyNumber": "73",
+"Position": "3B"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10495",
+"LastName": "Altuve",
+"FirstName": "Jose",
+"JerseyNumber": "27",
+"Position": "2B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10497",
+"LastName": "Correa",
+"FirstName": "Carlos",
+"JerseyNumber": "1",
+"Position": "SS"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10506",
+"LastName": "Springer",
+"FirstName": "George",
+"JerseyNumber": "4",
+"Position": "RF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "11387",
+"LastName": "Reddick",
+"FirstName": "Josh",
+"JerseyNumber": null,
+"Position": "RF"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10497",
+"LastName": "Correa",
+"FirstName": "Carlos",
+"JerseyNumber": "1",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "11387",
+"LastName": "Reddick",
+"FirstName": "Josh",
+"JerseyNumber": null,
+"Position": "RF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "11459",
+"LastName": "Morton",
+"FirstName": "Charlie",
+"JerseyNumber": "50",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": {
+"ID": "10724",
+"LastName": "McCann",
+"FirstName": "Brian",
+"JerseyNumber": "34",
+"Position": "C"
+}
+},
+{
+"position": "2B",
+"player": {
+"ID": "10495",
+"LastName": "Altuve",
+"FirstName": "Jose",
+"JerseyNumber": "27",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10494",
+"LastName": "Gattis",
+"FirstName": "Evan",
+"JerseyNumber": "11",
+"Position": "C"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10506",
+"LastName": "Springer",
+"FirstName": "George",
+"JerseyNumber": "4",
+"Position": "RF"
+}
+}
+]
+},
+"actual": null
+}
+]
+}
+},
+{
+"gamestartinglineup": {
+"lastUpdatedOn": "2018-04-02 9:55:21 AM",
+"game": {
+"id": "43486",
+"date": "2018-04-02",
+"time": "7:35PM",
+"awayTeam": {
+"ID": "126",
+"City": "Washington",
+"Name": "Nationals",
+"Abbreviation": "WAS"
+},
+"homeTeam": {
+"ID": "130",
+"City": "Atlanta",
+"Name": "Braves",
+"Abbreviation": "ATL"
+},
+"location": "SunTrust Park"
+},
+"teamLineup": [
+{
+"team": {
+"ID": "126",
+"City": "Washington",
+"Name": "Nationals",
+"Abbreviation": "WAS"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "11332",
+"LastName": "Wieters",
+"FirstName": "Matt",
+"JerseyNumber": "32",
+"Position": "C"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "11056",
+"LastName": "Taylor",
+"FirstName": "Michael A.",
+"JerseyNumber": "3",
+"Position": "CF"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11057",
+"LastName": "Turner",
+"FirstName": "Trea",
+"JerseyNumber": "7",
+"Position": "SS"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "11051",
+"LastName": "Zimmerman",
+"FirstName": "Ryan",
+"JerseyNumber": "11",
+"Position": "1B"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "11210",
+"LastName": "Kendrick",
+"FirstName": "Howie",
+"JerseyNumber": null,
+"Position": "LF"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "11049",
+"LastName": "Rendon",
+"FirstName": "Anthony",
+"JerseyNumber": "6",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "11040",
+"LastName": "Roark",
+"FirstName": "Tanner",
+"JerseyNumber": "57",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "11056",
+"LastName": "Taylor",
+"FirstName": "Michael A.",
+"JerseyNumber": "3",
+"Position": "CF"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "11053",
+"LastName": "Harper",
+"FirstName": "Bryce",
+"JerseyNumber": "34",
+"Position": "RF"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "11051",
+"LastName": "Zimmerman",
+"FirstName": "Ryan",
+"JerseyNumber": "11",
+"Position": "1B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10444",
+"LastName": "Eaton",
+"FirstName": "Adam",
+"JerseyNumber": "1",
+"Position": "RF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "11049",
+"LastName": "Rendon",
+"FirstName": "Anthony",
+"JerseyNumber": "6",
+"Position": "3B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "11057",
+"LastName": "Turner",
+"FirstName": "Trea",
+"JerseyNumber": "7",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "11053",
+"LastName": "Harper",
+"FirstName": "Bryce",
+"JerseyNumber": "34",
+"Position": "RF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "11040",
+"LastName": "Roark",
+"FirstName": "Tanner",
+"JerseyNumber": "57",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "11332",
+"LastName": "Wieters",
+"FirstName": "Matt",
+"JerseyNumber": "32",
+"Position": "C"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "11210",
+"LastName": "Kendrick",
+"FirstName": "Howie",
+"JerseyNumber": null,
+"Position": "LF"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10444",
+"LastName": "Eaton",
+"FirstName": "Adam",
+"JerseyNumber": "1",
+"Position": "RF"
+}
+}
+]
+},
+"actual": null
+},
+{
+"team": {
+"ID": "130",
+"City": "Atlanta",
+"Name": "Braves",
+"Abbreviation": "ATL"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10266",
+"LastName": "Flaherty",
+"FirstName": "Ryan",
+"JerseyNumber": "3",
+"Position": "3B"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10809",
+"LastName": "Stewart",
+"FirstName": "Chris",
+"JerseyNumber": "8",
+"Position": "C"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "10507",
+"LastName": "Tucker",
+"FirstName": "Preston",
+"JerseyNumber": "20",
+"Position": "LF"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10243",
+"LastName": "Markakis",
+"FirstName": "Nick",
+"JerseyNumber": "22",
+"Position": "RF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10241",
+"LastName": "Swanson",
+"FirstName": "Dansby",
+"JerseyNumber": "2",
+"Position": "SS"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10266",
+"LastName": "Flaherty",
+"FirstName": "Ryan",
+"JerseyNumber": "3",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "12541",
+"LastName": "Newcomb",
+"FirstName": "Sean",
+"JerseyNumber": "15",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10809",
+"LastName": "Stewart",
+"FirstName": "Chris",
+"JerseyNumber": "8",
+"Position": "C"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10237",
+"LastName": "Freeman",
+"FirstName": "Freddie",
+"JerseyNumber": "5",
+"Position": "1B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10243",
+"LastName": "Markakis",
+"FirstName": "Nick",
+"JerseyNumber": "22",
+"Position": "RF"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "11215",
+"LastName": "Inciarte",
+"FirstName": "Ender",
+"JerseyNumber": "11",
+"Position": "CF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "12553",
+"LastName": "Albies",
+"FirstName": "Ozzie",
+"JerseyNumber": "1",
+"Position": "2B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10241",
+"LastName": "Swanson",
+"FirstName": "Dansby",
+"JerseyNumber": "2",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10237",
+"LastName": "Freeman",
+"FirstName": "Freddie",
+"JerseyNumber": "5",
+"Position": "1B"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "12541",
+"LastName": "Newcomb",
+"FirstName": "Sean",
+"JerseyNumber": "15",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "12553",
+"LastName": "Albies",
+"FirstName": "Ozzie",
+"JerseyNumber": "1",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10507",
+"LastName": "Tucker",
+"FirstName": "Preston",
+"JerseyNumber": "20",
+"Position": "LF"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "11215",
+"LastName": "Inciarte",
+"FirstName": "Ender",
+"JerseyNumber": "11",
+"Position": "CF"
+}
+}
+]
+},
+"actual": null
+}
+]
+}
+},
+{
+"gamestartinglineup": {
+"lastUpdatedOn": "2018-04-02 9:55:22 AM",
+"game": {
+"id": "43488",
+"date": "2018-04-02",
+"time": "9:40PM",
+"awayTeam": {
+"ID": "137",
+"City": "Los Angeles",
+"Name": "Dodgers",
+"Abbreviation": "LAD"
+},
+"homeTeam": {
+"ID": "140",
+"City": "Arizona",
+"Name": "Diamondbacks",
+"Abbreviation": "ARI"
+},
+"location": "Chase Field"
+},
+"teamLineup": [
+{
+"team": {
+"ID": "137",
+"City": "Los Angeles",
+"Name": "Dodgers",
+"Abbreviation": "LAD"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "11360",
+"LastName": "Utley",
+"FirstName": "Chase",
+"JerseyNumber": "26",
+"Position": "2B"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10965",
+"LastName": "Forsythe",
+"FirstName": "Logan",
+"JerseyNumber": "11",
+"Position": "2B"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11256",
+"LastName": "Grandal",
+"FirstName": "Yasmani",
+"JerseyNumber": "9",
+"Position": "C"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "12414",
+"LastName": "Bellinger",
+"FirstName": "Cody",
+"JerseyNumber": "10",
+"Position": "1B"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10242",
+"LastName": "Kemp",
+"FirstName": "Matt",
+"JerseyNumber": "27",
+"Position": "LF"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "11360",
+"LastName": "Utley",
+"FirstName": "Chase",
+"JerseyNumber": "26",
+"Position": "2B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10578",
+"LastName": "Ryu",
+"FirstName": "Hyun-Jin",
+"JerseyNumber": "99",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10965",
+"LastName": "Forsythe",
+"FirstName": "Logan",
+"JerseyNumber": "11",
+"Position": "2B"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10591",
+"LastName": "Puig",
+"FirstName": "Yasiel",
+"JerseyNumber": "66",
+"Position": "RF"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "12414",
+"LastName": "Bellinger",
+"FirstName": "Cody",
+"JerseyNumber": "10",
+"Position": "1B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10588",
+"LastName": "Taylor",
+"FirstName": "Chris",
+"JerseyNumber": "3",
+"Position": "SS"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10586",
+"LastName": "Seager",
+"FirstName": "Corey",
+"JerseyNumber": "5",
+"Position": "SS"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10586",
+"LastName": "Seager",
+"FirstName": "Corey",
+"JerseyNumber": "5",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10591",
+"LastName": "Puig",
+"FirstName": "Yasiel",
+"JerseyNumber": "66",
+"Position": "RF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10578",
+"LastName": "Ryu",
+"FirstName": "Hyun-Jin",
+"JerseyNumber": "99",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "10242",
+"LastName": "Kemp",
+"FirstName": "Matt",
+"JerseyNumber": "27",
+"Position": "LF"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "11256",
+"LastName": "Grandal",
+"FirstName": "Yasmani",
+"JerseyNumber": "9",
+"Position": "C"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10588",
+"LastName": "Taylor",
+"FirstName": "Chris",
+"JerseyNumber": "3",
+"Position": "SS"
+}
+}
+]
+},
+"actual": null
+},
+{
+"team": {
+"ID": "140",
+"City": "Arizona",
+"Name": "Diamondbacks",
+"Abbreviation": "ARI"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "11427",
+"LastName": "Avila",
+"FirstName": "Alex",
+"JerseyNumber": "31",
+"Position": "C"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "11121",
+"LastName": "Dyson",
+"FirstName": "Jarrod",
+"JerseyNumber": "1",
+"Position": "CF"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11155",
+"LastName": "Marte",
+"FirstName": "Ketel",
+"JerseyNumber": "4",
+"Position": "SS"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10202",
+"LastName": "Goldschmidt",
+"FirstName": "Paul",
+"JerseyNumber": "44",
+"Position": "1B"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10201",
+"LastName": "Ahmed",
+"FirstName": "Nick",
+"JerseyNumber": "13",
+"Position": "SS"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10205",
+"LastName": "Lamb",
+"FirstName": "Jake",
+"JerseyNumber": "22",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10867",
+"LastName": "Walker",
+"FirstName": "Taijuan",
+"JerseyNumber": "99",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "11121",
+"LastName": "Dyson",
+"FirstName": "Jarrod",
+"JerseyNumber": "1",
+"Position": "CF"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10202",
+"LastName": "Goldschmidt",
+"FirstName": "Paul",
+"JerseyNumber": "44",
+"Position": "1B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10205",
+"LastName": "Lamb",
+"FirstName": "Jake",
+"JerseyNumber": "22",
+"Position": "3B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10211",
+"LastName": "Peralta",
+"FirstName": "David",
+"JerseyNumber": "6",
+"Position": "RF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10212",
+"LastName": "Pollock",
+"FirstName": "A.J.",
+"JerseyNumber": "11",
+"Position": "CF"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "11155",
+"LastName": "Marte",
+"FirstName": "Ketel",
+"JerseyNumber": "4",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10212",
+"LastName": "Pollock",
+"FirstName": "A.J.",
+"JerseyNumber": "11",
+"Position": "CF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10867",
+"LastName": "Walker",
+"FirstName": "Taijuan",
+"JerseyNumber": "99",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "11427",
+"LastName": "Avila",
+"FirstName": "Alex",
+"JerseyNumber": "31",
+"Position": "C"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10201",
+"LastName": "Ahmed",
+"FirstName": "Nick",
+"JerseyNumber": "13",
+"Position": "SS"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10211",
+"LastName": "Peralta",
+"FirstName": "David",
+"JerseyNumber": "6",
+"Position": "RF"
+}
+}
+]
+},
+"actual": null
+}
+]
+}
+},
+{
+"gamestartinglineup": {
+"lastUpdatedOn": "2018-04-02 9:55:23 AM",
+"game": {
+"id": "43489",
+"date": "2018-04-02",
+"time": "10:05PM",
+"awayTeam": {
+"ID": "121",
+"City": "Texas",
+"Name": "Rangers",
+"Abbreviation": "TEX"
+},
+"homeTeam": {
+"ID": "125",
+"City": "Oakland",
+"Name": "Athletics",
+"Abbreviation": "OAK"
+},
+"location": "Oakland-Alameda County Coliseum"
+},
+"teamLineup": [
+{
+"team": {
+"ID": "121",
+"City": "Texas",
+"Name": "Rangers",
+"Abbreviation": "TEX"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10994",
+"LastName": "Chirinos",
+"FirstName": "Robinson",
+"JerseyNumber": "61",
+"Position": "C"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "11003",
+"LastName": "Rua",
+"FirstName": "Ryan",
+"JerseyNumber": "16",
+"Position": "LF"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11146",
+"LastName": "Choo",
+"FirstName": "Shin-Soo",
+"JerseyNumber": "17",
+"Position": "RF"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "11146",
+"LastName": "Choo",
+"FirstName": "Shin-Soo",
+"JerseyNumber": "17",
+"Position": "RF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "11144",
+"LastName": "Odor",
+"FirstName": "Rougned",
+"JerseyNumber": "12",
+"Position": "2B"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "11143",
+"LastName": "Beltre",
+"FirstName": "Adrian",
+"JerseyNumber": "29",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "11147",
+"LastName": "Robinson",
+"FirstName": "Drew",
+"JerseyNumber": null,
+"Position": "RF"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "11003",
+"LastName": "Rua",
+"FirstName": "Ryan",
+"JerseyNumber": "16",
+"Position": "LF"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "11143",
+"LastName": "Beltre",
+"FirstName": "Adrian",
+"JerseyNumber": "29",
+"Position": "3B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "11002",
+"LastName": "Mazara",
+"FirstName": "Nomar",
+"JerseyNumber": "30",
+"Position": "RF"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10997",
+"LastName": "Andrus",
+"FirstName": "Elvis",
+"JerseyNumber": "1",
+"Position": "SS"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10998",
+"LastName": "Gallo",
+"FirstName": "Joey",
+"JerseyNumber": "13",
+"Position": "3B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10997",
+"LastName": "Andrus",
+"FirstName": "Elvis",
+"JerseyNumber": "1",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "11002",
+"LastName": "Mazara",
+"FirstName": "Nomar",
+"JerseyNumber": "30",
+"Position": "RF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10517",
+"LastName": "Minor",
+"FirstName": "Mike",
+"JerseyNumber": "36",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": {
+"ID": "11147",
+"LastName": "Robinson",
+"FirstName": "Drew",
+"JerseyNumber": null,
+"Position": "RF"
+}
+},
+{
+"position": "2B",
+"player": {
+"ID": "11144",
+"LastName": "Odor",
+"FirstName": "Rougned",
+"JerseyNumber": "12",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10994",
+"LastName": "Chirinos",
+"FirstName": "Robinson",
+"JerseyNumber": "61",
+"Position": "C"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10998",
+"LastName": "Gallo",
+"FirstName": "Joey",
+"JerseyNumber": "13",
+"Position": "3B"
+}
+}
+]
+},
+"actual": null
+},
+{
+"team": {
+"ID": "125",
+"City": "Oakland",
+"Name": "Athletics",
+"Abbreviation": "OAK"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "12565",
+"LastName": "Chapman",
+"FirstName": "Matt",
+"JerseyNumber": "7",
+"Position": "3B"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10995",
+"LastName": "Lucroy",
+"FirstName": "Jonathan",
+"JerseyNumber": "25",
+"Position": "C"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "10763",
+"LastName": "Olson",
+"FirstName": "Matt",
+"JerseyNumber": "13",
+"Position": "RF"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10763",
+"LastName": "Olson",
+"FirstName": "Matt",
+"JerseyNumber": "13",
+"Position": "RF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10942",
+"LastName": "Piscotty",
+"FirstName": "Stephen",
+"JerseyNumber": "55",
+"Position": "RF"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "12565",
+"LastName": "Chapman",
+"FirstName": "Matt",
+"JerseyNumber": "7",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "12492",
+"LastName": "Powell",
+"FirstName": "Boog",
+"JerseyNumber": null,
+"Position": "CF"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10995",
+"LastName": "Lucroy",
+"FirstName": "Jonathan",
+"JerseyNumber": "25",
+"Position": "C"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "11185",
+"LastName": "Lowrie",
+"FirstName": "Jed",
+"JerseyNumber": "8",
+"Position": "2B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "11187",
+"LastName": "Davis",
+"FirstName": "Khris",
+"JerseyNumber": "2",
+"Position": "LF"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "11297",
+"LastName": "Joyce",
+"FirstName": "Matt",
+"JerseyNumber": "17",
+"Position": "RF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10759",
+"LastName": "Semien",
+"FirstName": "Marcus",
+"JerseyNumber": "10",
+"Position": "SS"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10759",
+"LastName": "Semien",
+"FirstName": "Marcus",
+"JerseyNumber": "10",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "11187",
+"LastName": "Davis",
+"FirstName": "Khris",
+"JerseyNumber": "2",
+"Position": "LF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10750",
+"LastName": "Triggs",
+"FirstName": "Andrew",
+"JerseyNumber": "60",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": {
+"ID": "12492",
+"LastName": "Powell",
+"FirstName": "Boog",
+"JerseyNumber": null,
+"Position": "CF"
+}
+},
+{
+"position": "2B",
+"player": {
+"ID": "11185",
+"LastName": "Lowrie",
+"FirstName": "Jed",
+"JerseyNumber": "8",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10942",
+"LastName": "Piscotty",
+"FirstName": "Stephen",
+"JerseyNumber": "55",
+"Position": "RF"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "11297",
+"LastName": "Joyce",
+"FirstName": "Matt",
+"JerseyNumber": "17",
+"Position": "RF"
+}
+}
+]
+},
+"actual": null
+}
+]
+}
+},
+{
+"gamestartinglineup": {
+"lastUpdatedOn": "2018-04-02 9:55:23 AM",
+"game": {
+"id": "43490",
+"date": "2018-04-02",
+"time": "10:07PM",
+"awayTeam": {
+"ID": "116",
+"City": "Cleveland",
+"Name": "Indians",
+"Abbreviation": "CLE"
+},
+"homeTeam": {
+"ID": "124",
+"City": "Los Angeles",
+"Name": "Angels",
+"Abbreviation": "LAA"
+},
+"location": "Angel Stadium"
+},
+"teamLineup": [
+{
+"team": {
+"ID": "116",
+"City": "Cleveland",
+"Name": "Indians",
+"Abbreviation": "CLE"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10380",
+"LastName": "Gomes",
+"FirstName": "Yan",
+"JerseyNumber": "10",
+"Position": "C"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10387",
+"LastName": "Naquin",
+"FirstName": "Tyler",
+"JerseyNumber": "72",
+"Position": "CF"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11029",
+"LastName": "Encarnacion",
+"FirstName": "Edwin",
+"JerseyNumber": "10",
+"Position": "DH"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10385",
+"LastName": "Chisenhall",
+"FirstName": "Lonnie",
+"JerseyNumber": "8",
+"Position": "RF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10385",
+"LastName": "Chisenhall",
+"FirstName": "Lonnie",
+"JerseyNumber": "8",
+"Position": "RF"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "11105",
+"LastName": "Ramírez",
+"FirstName": "Jose",
+"JerseyNumber": "11",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "12418",
+"LastName": "Zimmer",
+"FirstName": "Bradley",
+"JerseyNumber": null,
+"Position": "CF"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10387",
+"LastName": "Naquin",
+"FirstName": "Tyler",
+"JerseyNumber": "72",
+"Position": "CF"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "11105",
+"LastName": "Ramírez",
+"FirstName": "Jose",
+"JerseyNumber": "11",
+"Position": "3B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10753",
+"LastName": "Alonso",
+"FirstName": "Yonder",
+"JerseyNumber": "17",
+"Position": "1B"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "11103",
+"LastName": "Lindor",
+"FirstName": "Francisco",
+"JerseyNumber": "12",
+"Position": "SS"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "11102",
+"LastName": "Kipnis",
+"FirstName": "Jason",
+"JerseyNumber": "22",
+"Position": "2B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "11103",
+"LastName": "Lindor",
+"FirstName": "Francisco",
+"JerseyNumber": "12",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "11029",
+"LastName": "Encarnacion",
+"FirstName": "Edwin",
+"JerseyNumber": "10",
+"Position": "DH"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10365",
+"LastName": "Clevinger",
+"FirstName": "Mike",
+"JerseyNumber": "73",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": {
+"ID": "12418",
+"LastName": "Zimmer",
+"FirstName": "Bradley",
+"JerseyNumber": null,
+"Position": "CF"
+}
+},
+{
+"position": "2B",
+"player": {
+"ID": "11102",
+"LastName": "Kipnis",
+"FirstName": "Jason",
+"JerseyNumber": "22",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10380",
+"LastName": "Gomes",
+"FirstName": "Yan",
+"JerseyNumber": "10",
+"Position": "C"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10753",
+"LastName": "Alonso",
+"FirstName": "Yonder",
+"JerseyNumber": "17",
+"Position": "1B"
+}
+}
+]
+},
+"actual": null
+},
+{
+"team": {
+"ID": "124",
+"City": "Los Angeles",
+"Name": "Angels",
+"Abbreviation": "LAA"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "11389",
+"LastName": "Valbuena",
+"FirstName": "Luis",
+"JerseyNumber": "18",
+"Position": "3B"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10559",
+"LastName": "Marte",
+"FirstName": "Jefry",
+"JerseyNumber": "19",
+"Position": "1B"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11176",
+"LastName": "Calhoun",
+"FirstName": "Kole",
+"JerseyNumber": "56",
+"Position": "RF"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10562",
+"LastName": "Pujols",
+"FirstName": "Albert",
+"JerseyNumber": "5",
+"Position": "DH"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10560",
+"LastName": "Simmons",
+"FirstName": "Andrelton",
+"JerseyNumber": "2",
+"Position": "SS"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10351",
+"LastName": "Cozart",
+"FirstName": "Zack",
+"JerseyNumber": "2",
+"Position": "SS"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10636",
+"LastName": "Maldonado",
+"FirstName": "Martin",
+"JerseyNumber": "12",
+"Position": "C"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10559",
+"LastName": "Marte",
+"FirstName": "Jefry",
+"JerseyNumber": "19",
+"Position": "1B"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10476",
+"LastName": "Upton",
+"FirstName": "Justin",
+"JerseyNumber": "8",
+"Position": "LF"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10562",
+"LastName": "Pujols",
+"FirstName": "Albert",
+"JerseyNumber": "5",
+"Position": "DH"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10351",
+"LastName": "Cozart",
+"FirstName": "Zack",
+"JerseyNumber": "2",
+"Position": "SS"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10561",
+"LastName": "Trout",
+"FirstName": "Mike",
+"JerseyNumber": "27",
+"Position": "CF"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10560",
+"LastName": "Simmons",
+"FirstName": "Andrelton",
+"JerseyNumber": "2",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10476",
+"LastName": "Upton",
+"FirstName": "Justin",
+"JerseyNumber": "8",
+"Position": "LF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10545",
+"LastName": "Ramirez",
+"FirstName": "J.C.",
+"JerseyNumber": "66",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": {
+"ID": "10636",
+"LastName": "Maldonado",
+"FirstName": "Martin",
+"JerseyNumber": "12",
+"Position": "C"
+}
+},
+{
+"position": "2B",
+"player": {
+"ID": "11389",
+"LastName": "Valbuena",
+"FirstName": "Luis",
+"JerseyNumber": "18",
+"Position": "3B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "11176",
+"LastName": "Calhoun",
+"FirstName": "Kole",
+"JerseyNumber": "56",
+"Position": "RF"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10561",
+"LastName": "Trout",
+"FirstName": "Mike",
+"JerseyNumber": "27",
+"Position": "CF"
+}
+}
+]
+},
+"actual": null
+}
+]
+}
+},
+{
+"gamestartinglineup": {
+"lastUpdatedOn": "2018-04-02 9:55:23 AM",
+"game": {
+"id": "43491",
+"date": "2018-04-02",
+"time": "10:10PM",
+"awayTeam": {
+"ID": "138",
+"City": "Colorado",
+"Name": "Rockies",
+"Abbreviation": "COL"
+},
+"homeTeam": {
+"ID": "139",
+"City": "San Diego",
+"Name": "Padres",
+"Abbreviation": "SD"
+},
+"location": "Petco Park"
+},
+"teamLineup": [
+{
+"team": {
+"ID": "138",
+"City": "Colorado",
+"Name": "Rockies",
+"Abbreviation": "COL"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "10410",
+"LastName": "Story",
+"FirstName": "Trevor",
+"JerseyNumber": "27",
+"Position": "SS"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "11266",
+"LastName": "Wolters",
+"FirstName": "Tony",
+"JerseyNumber": "14",
+"Position": "C"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11269",
+"LastName": "Parra",
+"FirstName": "Gerardo",
+"JerseyNumber": "8",
+"Position": "LF"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10414",
+"LastName": "González",
+"FirstName": "Carlos",
+"JerseyNumber": "5",
+"Position": "RF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "11000",
+"LastName": "Desmond",
+"FirstName": "Ian",
+"JerseyNumber": "20",
+"Position": "CF"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "10408",
+"LastName": "Arenado",
+"FirstName": "Nolan",
+"JerseyNumber": "28",
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10399",
+"LastName": "Marquez",
+"FirstName": "German",
+"JerseyNumber": "67",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "11266",
+"LastName": "Wolters",
+"FirstName": "Tony",
+"JerseyNumber": "14",
+"Position": "C"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10408",
+"LastName": "Arenado",
+"FirstName": "Nolan",
+"JerseyNumber": "28",
+"Position": "3B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10414",
+"LastName": "González",
+"FirstName": "Carlos",
+"JerseyNumber": "5",
+"Position": "RF"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "10411",
+"LastName": "Blackmon",
+"FirstName": "Charlie",
+"JerseyNumber": "19",
+"Position": "CF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10409",
+"LastName": "LeMahieu",
+"FirstName": "DJ",
+"JerseyNumber": "9",
+"Position": "2B"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "10410",
+"LastName": "Story",
+"FirstName": "Trevor",
+"JerseyNumber": "27",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "10411",
+"LastName": "Blackmon",
+"FirstName": "Charlie",
+"JerseyNumber": "19",
+"Position": "CF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10389",
+"LastName": "Bettis",
+"FirstName": "Chad",
+"JerseyNumber": "35",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "10409",
+"LastName": "LeMahieu",
+"FirstName": "DJ",
+"JerseyNumber": "9",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "11000",
+"LastName": "Desmond",
+"FirstName": "Ian",
+"JerseyNumber": "20",
+"Position": "CF"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "11269",
+"LastName": "Parra",
+"FirstName": "Gerardo",
+"JerseyNumber": "8",
+"Position": "LF"
+}
+}
+]
+},
+"actual": null
+},
+{
+"team": {
+"ID": "139",
+"City": "San Diego",
+"Name": "Padres",
+"Abbreviation": "SD"
+},
+"expected": {
+"starter": [
+{
+"position": "BO7",
+"player": {
+"ID": "11207",
+"LastName": "Galvis",
+"FirstName": "Freddy",
+"JerseyNumber": "13",
+"Position": "SS"
+}
+},
+{
+"position": "BO8",
+"player": {
+"ID": "10839",
+"LastName": "Hedges",
+"FirstName": "Austin",
+"JerseyNumber": "18",
+"Position": "C"
+}
+},
+{
+"position": "BO5",
+"player": {
+"ID": "11222",
+"LastName": "Villanueva",
+"FirstName": "Christian",
+"JerseyNumber": null,
+"Position": "3B"
+}
+},
+{
+"position": "RF",
+"player": {
+"ID": "10853",
+"LastName": "Renfroe",
+"FirstName": "Hunter",
+"JerseyNumber": "71",
+"Position": "RF"
+}
+},
+{
+"position": "BO6",
+"player": {
+"ID": "10842",
+"LastName": "Asuaje",
+"FirstName": "Carlos",
+"JerseyNumber": "63",
+"Position": "2B"
+}
+},
+{
+"position": "3B",
+"player": {
+"ID": "11222",
+"LastName": "Villanueva",
+"FirstName": "Christian",
+"JerseyNumber": null,
+"Position": "3B"
+}
+},
+{
+"position": "BO9",
+"player": {
+"ID": "10832",
+"LastName": "Perdomo",
+"FirstName": "Luis",
+"JerseyNumber": "61",
+"Position": "P"
+}
+},
+{
+"position": "C",
+"player": {
+"ID": "10839",
+"LastName": "Hedges",
+"FirstName": "Austin",
+"JerseyNumber": "18",
+"Position": "C"
+}
+},
+{
+"position": "BO3",
+"player": {
+"ID": "10528",
+"LastName": "Hosmer",
+"FirstName": "Eric",
+"JerseyNumber": "35",
+"Position": "1B"
+}
+},
+{
+"position": "BO4",
+"player": {
+"ID": "10853",
+"LastName": "Renfroe",
+"FirstName": "Hunter",
+"JerseyNumber": "71",
+"Position": "RF"
+}
+},
+{
+"position": "BO1",
+"player": {
+"ID": "11282",
+"LastName": "Margot",
+"FirstName": "Manuel",
+"JerseyNumber": "70",
+"Position": "CF"
+}
+},
+{
+"position": "BO2",
+"player": {
+"ID": "10852",
+"LastName": "Pirela",
+"FirstName": "Jose",
+"JerseyNumber": "17",
+"Position": "LF"
+}
+},
+{
+"position": "SS",
+"player": {
+"ID": "11207",
+"LastName": "Galvis",
+"FirstName": "Freddy",
+"JerseyNumber": "13",
+"Position": "SS"
+}
+},
+{
+"position": "CF",
+"player": {
+"ID": "11282",
+"LastName": "Margot",
+"FirstName": "Manuel",
+"JerseyNumber": "70",
+"Position": "CF"
+}
+},
+{
+"position": "P",
+"player": {
+"ID": "10715",
+"LastName": "Mitchell",
+"FirstName": "Bryan",
+"JerseyNumber": "55",
+"Position": "P"
+}
+},
+{
+"position": "OF",
+"player": null
+},
+{
+"position": "2B",
+"player": {
+"ID": "10842",
+"LastName": "Asuaje",
+"FirstName": "Carlos",
+"JerseyNumber": "63",
+"Position": "2B"
+}
+},
+{
+"position": "DH",
+"player": null
+},
+{
+"position": "1B",
+"player": {
+"ID": "10528",
+"LastName": "Hosmer",
+"FirstName": "Eric",
+"JerseyNumber": "35",
+"Position": "1B"
+}
+},
+{
+"position": "LF",
+"player": {
+"ID": "10852",
+"LastName": "Pirela",
+"FirstName": "Jose",
+"JerseyNumber": "17",
+"Position": "LF"
+}
+}
+]
+},
+"actual": null
+}
+]
+}
+}
+]
