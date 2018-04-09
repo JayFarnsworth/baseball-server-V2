@@ -2,7 +2,7 @@ const cache = require('./cache.js');
 const fetch = require('node-fetch');
 
 
-function getJSON(url, options={}, msec = 2000) {
+function getJSON(url, options={}, msec=2000) {
   console.log('cache fetch', url)
   return Promise.resolve()
     .then(()=>{
@@ -17,6 +17,7 @@ function getJSON(url, options={}, msec = 2000) {
             .then(request => request.json())
             .then(data=>{
               cache.set(url, data)
+              console.log(data)
               return data
             })
         })

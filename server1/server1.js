@@ -19,6 +19,8 @@ const fs = require('fs');
 const playerObject = require('./localServerFiles/playerObject.json');
 const cache = require('./cache.js');
 const cacheFetch = require('./cache-fetch.js');
+const mongoPlayers = require('./mongoBaseball');
+
 
 var rp = require('request-promise');
 const teams = ['ARI', 'ATL', 'BAL', 'BOS', 'CHC', 'CIN', 'CLE', 'COL', 'CWS', 'DET', 'HOU', 'KC', 'LAA', 'LAD', 'MIA', 'MIL', 'MIN', 'NYM', 'NYY', 'OAK', 'PHI', 'PIT', 'SD', 'SEA', 'SF', 'STL', 'TB', 'TEX', 'TOR', 'WAS'];
@@ -56,37 +58,80 @@ function delay(msec) {
 console.log(getDate())
 
 
-app.get('/eliminatebadgames', function (req, res) {
-  var gameObj = require('./localServerFiles/allGamesFullFormattedLineups.json')
-  var games = [];
-  var badGames = [];
-  for (let game of gameObj) {
-    if (game.homeTeam.lineup.length === 9 && game.homeTeam.pitcher !== undefined) {
-      if (game.awayTeam.lineup.length === 9 && game.awayTeam.pitcher !== undefined) {
-        games.push(game)
-      } else {
-        badGames.push(game)
-      }
-    } else {
-      badGames.push(game)
-    }
-  }
-  fs.writeFile('./localServerFiles/nobadgames.json', JSON.stringify(games), function (err) {
-    console.log('File written as nobadgames.json');
+
+app.get('/mongogames', function (req, res) {
+  mongoGameFetch()
+  .then()
+})
+
+function mongoGameFetch() {
+  let date = getDate()
+  let url = 'https://api.mysportsfeeds.com/v1.2/pull/mlb/2018-regular/daily_game_schedule.json?fordate=' + date;
+  fetch(url, {
+    credentials: 'same-origin',
+    headers: MSFHeaders,
+    method: 'GET',
+    mode: 'cors'
   })
-  fs.writeFile('./localServerFiles/badGames.json', JSON.stringify(badGames), function (err) {
-    console.log('File written as badGames.json');
+    .then(resp => resp.json())
+    .then(resp => {
+      for (let game of resp.dailygameschedule.gameentry) {
+        let gameid = game.id;
+        mongoPlayers.createGame({
+          id: gameid,
+          date: game.date,
+          time: game.time,
+          awayTeam: game.awayTeam.Abbreviation,
+          homeTeam: game.homeTeam.Abbreviation,
+          location: game.location
+        }).catch(err => console.log(err))
+    }
+  })
+}
+app.get('/mongogamesfind', function(req, res){
+  mongoPlayers.findTodaysGames('2018-04-09')
+  .then(games=>{
+    return cacheFetch(`https://api.mysportsfeeds.com/v1.2/pull/mlb/2018-regular/game_startinglineup.json?gameid=${games[1].id}`, {
+      credentials: 'same-origin',
+      headers: MSFHeaders,
+      method: 'GET',
+      mode: 'cors'
+    }).then(resp=>{res.send(resp)})
   })
 })
 
-app.get('/addstats', function(req, res){
-  // var gameLineupObj = require('./localServerFiles/allGamesFullFormattedLineups.json')
-  fetch('http://localhost:4000/fetchpitchercumdata1')
-  .then(fetch('http://localhost:4000/addbatterstats'))
-  .then(fetch('http://localhost:4000/getallbatterlogs'))
-  .then(fetch('http://localhost:4000/addpitcherlogs'))
-  .then(resp=>resp.json()).then(resp=>res.send)
+function mongoLineups(id){
+  const urls = idList
+    .map((id, i) => `https://api.mysportsfeeds.com/v1.2/pull/mlb/2018-regular/game_startinglineup.json?gameid=${id}`);
+  function getJSON(url, index) {
+    return Promise.resolve()
+      .then(() => {
+        return delay(index * currentDelay);
+      })
+      .then(() => {
+        return cacheFetch(url, {
+          credentials: 'same-origin',
+          headers: MSFHeaders,
+          method: 'GET',
+          mode: 'cors'
+        }, null, i)
+          .then(request => request.json())
+      })
+  }
+}
+
+
+
+
+
+app.get('/getmongo', function(req, res) {
+  var gameid = req.query.id;
+  mongoPlayers.findGame(gameid)
+  .then(resp=>res.send(resp))
 })
+
+
+
 
 app.get('/rosterplayers', function (req, res) {
     getPlayers(getDate())
@@ -111,6 +156,118 @@ function getPlayers (forDate) {
     mode: 'cors'
   })
 }
+
+
+
+
+
+
+
+
+
+app.get('/addbatterstats1', function (req, res) {
+  var playerObj = cache.get('teamObject')
+    .then(playerObj => {
+      var teams = Object.keys(playerObj);
+      return getBatterStats(playerObj)
+      // var teamIds = Object.keys(playerObj[teams[0]].batters)
+      // var commaSeparated = '';
+      // var statObj = {};
+      // for (let id of teamIds) {
+      //   statObj[id] = { id: id, stats: {} }
+      //   commaSeparated += id + ','
+      // }
+      // return getBatterStats(commaSeparated, teams[0])
+      // for (let year of years) {
+      //   statObj[year] = getBatterStats(year, commaSeparated, statObj)
+      // }
+      // return statObj
+    })
+    .then(statObj => {
+      res.send(statObj)
+    })
+})
+
+
+function getBatterStats(playerObj) {
+  var teams = Object.keys(playerObj);
+  var statObj = {};
+  var x = []
+  var urls = []
+  var teamIds = Object.keys(playerObj[teams[0]].batters)
+  var commaSeparated = '';
+  for (let id of teamIds) {
+    statObj[id] = { id: id, stats: {} }
+    commaSeparated += (id + ',')
+  }
+  var years = ['2017', '2018']
+  for (let year of years) {
+    let url = `https://api.mysportsfeeds.com/v1.2/pull/mlb/${year}-regular/cumulative_player_stats.json?player=${commaSeparated}&playerstats=AB,R,H,2B,3B,HR,RBI,BB,SO,AVG,SLG,OPS,PA,LOB,GroB,FlyB,LD,NP,StrM,Swi`;
+    urls.push(url)
+  }
+  urls.map(url => {
+    return cacheFetch(url, {
+      credentials: 'same-origin',
+      headers: MSFHeaders,
+      method: 'GET',
+      mode: 'cors'
+    })
+  })
+
+}
+
+    //   .then(resp => {
+    //     for (let player of resp.cumulativeplayerstats.playerstatsentry) {
+    //       var s = player.stats;
+    //       let id = player.player.ID;
+    //        statObj[id].stats[year] = {
+    //         G: s.GamesPlayed['#text'],
+    //         AB: s.AtBats['#text'],
+    //         R: s.Runs['#text'],
+    //         H: s.Hits['#text'],
+    //         '2B': s.SecondBaseHits['#text'],
+    //         '3B': s.ThirdBaseHits['#text'],
+    //         HR: s.Homeruns['#text'],
+    //         RBI: s.RunsBattedIn['#text'],
+    //         BB: s.BatterWalks['#text'],
+    //         SWI: s.BatterSwings['#text'],
+    //         STRM: s.BatterStrikesMiss['#text'],
+    //         GROB: s.BatterGroundBalls['#text'],
+    //         FLYB: s.BatterFlyBalls['#text'],
+    //         LD: s.BatterLineDrives['#text'],
+    //         SO: s.BatterStrikeouts['#text'],
+    //         BA: s.BattingAvg['#text'],
+    //         SLG: s.BatterSluggingPct['#text'],
+    //         OPS: s.BatterOnBasePlusSluggingPct['#text'],
+    //         NP: s.PitchesFaced['#text'],
+    //         PA: s.PlateAppearances['#text'],
+    //         LOB: s.LeftOnBase['#text']
+    //       }
+    //     }
+    //     if (year === '2018') {
+    //       return statsObj
+    //     }
+
+      // if (year === '2018') {
+      //   var added = addBatterCum1(objs, gameObj, team)
+      //   res.send(added);
+
+      //   fs.writeFile('./localServerFiles/playerObject.json', JSON.stringify(added), function (err) {
+      //     console.log('File written as playerObject.json');
+      //   })
+      // }
+
+
+
+
+
+
+
+
+
+
+
+
 
 function getTeams(players) {
   // var players = body.rosterplayers.playerentry;
@@ -287,10 +444,6 @@ function addBatterCum(statsObj, playerObj) {
   return playerObj;
 }
 
-app.get('/cache', function (req, res) {
-  cache.get('playerObj')
-  .then(data=>{res.send(data)})
-})
 
 app.get('/getallteamsbatters', function (req, res){
   const currentDelay = 20000;
@@ -326,21 +479,29 @@ app.get('/getallteamsbatters', function (req, res){
 
 
 app.get('/addbatterstats1', function (req, res) {
-  const gameObj = require('./localServerFiles/playerObj1.json');
-  var team = req.query.team
-  var teams = Object.keys(gameObj);
-  var teamIds = Object.keys(gameObj[team].batters);
-  var commaSeparated = '';
-  var objs = {};
-  for (let id of teamIds) {
-    objs[id] = { id: id, stats: {} }
-    commaSeparated += id + ','
-  }
-  var years = ['2017', '2018'];
-  for (let year of years) {
-
-  }
+  var playerObj = cache.get('teamObject')
+  .then(playerObj=>{
+    var teams = Object.keys(playerObj);
+    return getBatterStats(playerObj)
+    // var teamIds = Object.keys(playerObj[teams[0]].batters)
+    // var commaSeparated = '';
+    // var statObj = {};
+    // for (let id of teamIds) {
+    //   statObj[id] = { id: id, stats: {} }
+    //   commaSeparated += id + ','
+    // }
+    // return getBatterStats(commaSeparated, teams[0])
+    // for (let year of years) {
+    //   statObj[year] = getBatterStats(year, commaSeparated, statObj)
+    // }
+    // return statObj
+  })
+  .then(statObj=>{
+    res.send(statObj)
+  })
 })
+
+
 function addBatterCum1(statsObj, playerObj, team) {
   var idList = Object.keys(statsObj);
   for (id of idList) {
@@ -349,46 +510,65 @@ function addBatterCum1(statsObj, playerObj, team) {
   return playerObj;
 }
 
-function getPlayerStats (year, commaList) {
-  let url = `https://api.mysportsfeeds.com/v1.2/pull/mlb/${year}-regular/cumulative_player_stats.json?player=${commaSeparated}&playerstats=AB,R,H,2B,3B,HR,RBI,BB,SO,AVG,SLG,OPS,PA,LOB,GroB,FlyB,LD,NP,StrM,Swi`;
-  return cacheFetch(url, {
-    credentials: 'same-origin',
-    headers: MSFHeaders,
-    method: 'GET',
-    mode: 'cors'
+function getBatterStats (playerObj) {
+  var teams = Object.keys(playerObj);
+  var statObj = {};
+  var x = []
+  var urls = []
+    var teamIds = Object.keys(playerObj[teams[0]].batters)
+    var commaSeparated = '';
+    for (let id of teamIds) {
+      statObj[id] = { id: id, stats: {} }
+      commaSeparated += (id + ',')
+    }
+    var years = ['2017', '2018']
+    for (let year of years) {
+      let url = `https://api.mysportsfeeds.com/v1.2/pull/mlb/${year}-regular/cumulative_player_stats.json?player=${commaSeparated}&playerstats=AB,R,H,2B,3B,HR,RBI,BB,SO,AVG,SLG,OPS,PA,LOB,GroB,FlyB,LD,NP,StrM,Swi`;
+      urls.push(url)
+    }
+  urls.map(url=>{
+    return cacheFetch(url, {
+      credentials: 'same-origin',
+      headers: MSFHeaders,
+      method: 'GET',
+      mode: 'cors'
+    })
   })
-    .then(resp => resp.json())
-    .then(resp => {
-      for (let player of resp.cumulativeplayerstats.playerstatsentry) {
-        if (player === undefined) {
-          console.log('undefined', player)
-        }
-        var s = player.stats;
-        let id = player.player.ID;
-        objs[id].stats[year] = {
-          G: s.GamesPlayed['#text'],
-          AB: s.AtBats['#text'],
-          R: s.Runs['#text'],
-          H: s.Hits['#text'],
-          '2B': s.SecondBaseHits['#text'],
-          '3B': s.ThirdBaseHits['#text'],
-          HR: s.Homeruns['#text'],
-          RBI: s.RunsBattedIn['#text'],
-          BB: s.BatterWalks['#text'],
-          SWI: s.BatterSwings['#text'],
-          STRM: s.BatterStrikesMiss['#text'],
-          GROB: s.BatterGroundBalls['#text'],
-          FLYB: s.BatterFlyBalls['#text'],
-          LD: s.BatterLineDrives['#text'],
-          SO: s.BatterStrikeouts['#text'],
-          BA: s.BattingAvg['#text'],
-          SLG: s.BatterSluggingPct['#text'],
-          OPS: s.BatterOnBasePlusSluggingPct['#text'],
-          NP: s.PitchesFaced['#text'],
-          PA: s.PlateAppearances['#text'],
-          LOB: s.LeftOnBase['#text']
-        }
-      }
+
+}
+
+    //   .then(resp => {
+    //     for (let player of resp.cumulativeplayerstats.playerstatsentry) {
+    //       var s = player.stats;
+    //       let id = player.player.ID;
+    //        statObj[id].stats[year] = {
+    //         G: s.GamesPlayed['#text'],
+    //         AB: s.AtBats['#text'],
+    //         R: s.Runs['#text'],
+    //         H: s.Hits['#text'],
+    //         '2B': s.SecondBaseHits['#text'],
+    //         '3B': s.ThirdBaseHits['#text'],
+    //         HR: s.Homeruns['#text'],
+    //         RBI: s.RunsBattedIn['#text'],
+    //         BB: s.BatterWalks['#text'],
+    //         SWI: s.BatterSwings['#text'],
+    //         STRM: s.BatterStrikesMiss['#text'],
+    //         GROB: s.BatterGroundBalls['#text'],
+    //         FLYB: s.BatterFlyBalls['#text'],
+    //         LD: s.BatterLineDrives['#text'],
+    //         SO: s.BatterStrikeouts['#text'],
+    //         BA: s.BattingAvg['#text'],
+    //         SLG: s.BatterSluggingPct['#text'],
+    //         OPS: s.BatterOnBasePlusSluggingPct['#text'],
+    //         NP: s.PitchesFaced['#text'],
+    //         PA: s.PlateAppearances['#text'],
+    //         LOB: s.LeftOnBase['#text']
+    //       }
+    //     }
+    //     if (year === '2018') {
+    //       return statsObj
+    //     }
+      
       // if (year === '2018') {
       //   var added = addBatterCum1(objs, gameObj, team)
       //   res.send(added);
@@ -398,8 +578,9 @@ function getPlayerStats (year, commaList) {
       //   })
       // }
 
-    })
-}
+    
+
+
 
 
 
