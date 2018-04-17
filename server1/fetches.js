@@ -11,6 +11,7 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const cache = require('./cache.js');
 const cacheFetch = require('./cache-fetch.js');
+const schedule = require('node-schedule');
 
 
 module.exports = { getBatterUrls, getPitcherUrls, getBatterLogUrls, getPitcherLogUrls }
@@ -41,18 +42,12 @@ var MSFHeaders = {
 // Get updated rosters and match to active players list
 
 function rosterPlayers(){
-  getPlayers(getDate())
+  return getPlayers(getDate())
     .then(body => {
       return getTeams(body.rosterplayers.playerentry)
         .then(sortBattersPitchers)
         .then(sorted => {
           return cache.set('teamObject', sorted)
-            .then(() => {
-              cache.set('playerObject', sorted)
-              // fs.writeFile('./PlayerObject.json', JSON.stringify(sorted), function (err) {
-              //   console.log('File written as PlayerObject.json');
-              // })
-            })
         })
     })
 }
@@ -201,7 +196,7 @@ function fetchBatterCumulative(){
     }))
   })
 }
-
+// let url = `https://api.mysportsfeeds.com/v1.2/pull/mlb/${year}-regular/cumulative_player_stats.json?player=${pitcherIds}&playerstats=W,L,ERA,IP,H,2B,3B,ER,HR,BB,StrM,GroB,FlyB,LD,SO,AVG,WHIP,TBF,NP,OBP,SLG,OPS,GS,SLG`;
 
 function getPitcherUrls(){
   cache.get('playerObject')
@@ -213,7 +208,7 @@ function getPitcherUrls(){
       // years to be added to stats
       var years = ['2017', '2018']
       for (let year of years) {
-        let url = `https://api.mysportsfeeds.com/v1.2/pull/mlb/${year}-regular/cumulative_player_stats.json?player=${pitcherIds}&playerstats=W,L,ERA,IP,H,2B,3B,ER,HR,BB,StrM,GroB,FlyB,LD,SO,AVG,WHIP,TBF,NP,OBP,SLG,OPS,GS`;
+        let url = `https://api.mysportsfeeds.com/v1.2/pull/mlb/${year}-regular/cumulative_player_stats.json?player=${pitcherIds}`;
         urlList.push(url)
       }
     }
@@ -248,13 +243,14 @@ function getBatterLogUrls(){
     return urlList
   })
 }
+// let url = `https://api.mysportsfeeds.com/v1.2/pull/mlb/current/player_gamelogs.json?player=${pitcherList}&playerstats=W,L,ERA,SV,SVO,IP,H,2B,3B,R,ER,HR,BB,Swi,Str,StrF,StrM,StrL,GroB,FlyB,LD,SF,SO,AVG,WHIP,HB,HLD,TBF,NP,OBP,OPS,ABP,GS,SLG`
 function getPitcherLogUrls() {
   cache.get('playerObject')
   .then(playerObject=>{
     var urlList = []
     for (let team of teams) {
       var pitcherList = urlIdList(Object.keys(playerObject[team].pitchers))
-      let url = `https://api.mysportsfeeds.com/v1.2/pull/mlb/current/player_gamelogs.json?player=${pitcherList}&playerstats=W,L,ERA,SV,SVO,IP,H,2B,3B,R,ER,HR,BB,Swi,Str,StrF,StrM,StrL,GroB,FlyB,LD,SF,SO,AVG,WHIP,HB,HLD,TBF,NP,OBP,OPS,ABP,GS`;
+      let url = `https://api.mysportsfeeds.com/v1.2/pull/mlb/current/player_gamelogs.json?player=${pitcherList}`;
       urlList.push(url)
     }
     cache.set('pitcherLogUrls', urlList)
@@ -295,6 +291,9 @@ const request = async () => {
   const pitcherLogs = await fetchPitcherLogs()
 }
 request()
+// schedule.scheduleJob('0 3 * * *', () => { 
+//   request()
+//  })
 
 // rosterPlayers()
 

@@ -1695,7 +1695,7 @@ app.get('/scrapebatter', function (req, res) {
   );
 })
 
-app.get('/scrapebatter1', function (req, res) {
+app.get('/getfangraphlogs', function (req, res) {
   var fg_id = req.query.batter;
   var url = 'https://www.fangraphs.com/statsd.aspx?playerid=' + fg_id;
   tabletojson.convertUrl(
@@ -1703,11 +1703,34 @@ app.get('/scrapebatter1', function (req, res) {
     { useFirstRowForHeadings: false },
     function (tablesAsJson) {
       console.log(tablesAsJson)
+      var gameLogs = tablesAsJson[tablesAsJson.length - 1]
+      res.send(gameLogs)
+    }
+  );
+})
+
+
+app.get('/getfangraphstats', function (req, res) {
+  var fg_id = req.query.batter;
+  var url = 'https://www.fangraphs.com/statss.aspx?playerid=' + fg_id;
+  tabletojson.convertUrl(
+    url,
+    { useFirstRowForHeadings: false },
+    function (tablesAsJson) {
       res.send(tablesAsJson)
     }
   );
 })
 
+app.get('/test', function(req, res){
+  cache.get('rockiesfgurls')
+    .then(urls=>{
+      cache.get(urls[0] + 'formatted')
+        .then(stats=>{
+          res.send(stats)
+        })
+    })
+})
 
 
 
@@ -1956,7 +1979,8 @@ app.get('/mongofindall', function(req, res){
   var id = req.query.id;
   mongo.findBatter(id)
   .then(resp=>res.send(resp))
-})
+});
+
 
 app.get('/mongoaddstat', function(req, res){
   var id = req.query.id;
